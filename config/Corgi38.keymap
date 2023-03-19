@@ -14,8 +14,6 @@
 #define NUMB    3
 #define CONF    4
 
-
-
 / {
 
 behaviors {
