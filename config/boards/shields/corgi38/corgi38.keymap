@@ -18,7 +18,7 @@
     &mt LSHFT A      &mt LCTRL S                 &mt LALT D      &mt LGUI F          &kp G                   &kp H                  &mt LGUI J          &mt LALT K      &mt LCTRL L         &mt LSHFT SEMI
     &kp Z            &kp X                       &kp C           &kp V               &kp B                   &kp N                  &kp M               &none           &none               &none
                      &mt LS(LC(LA(LCMD))) ESC    &mt LGUI BSPC   &mt LSHIFT SPACE    &lt NUMB ENTER          &lt NAV LGUI(SPACE)    &lt SYMB LA(N5)     &kp LA(N6)      &lt CONF TAB
-
+>;
         };
     };
 };
