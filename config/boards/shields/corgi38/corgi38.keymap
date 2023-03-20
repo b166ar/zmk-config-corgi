@@ -34,7 +34,7 @@ behaviors {
     //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
                         
                         
-        indings = <
+        bindings = <
     &kp Q            &kp W                       &kp E           &kp R               &kp T                   &kp Y               &kp U           &kp I           &kp O               &kp P
     &hm LSHFT A      &hm LCTRL S                 &hm LALT D      &hm LGUI F          &kp G                   &kp H               &hm LGUI J      &hm LALT K      &hm LCTRL L         &hm LSHFT SEMI
     &kp Z            &kp X                       &kp C           &kp V               &kp B                   &kp N               &kp M           &kp COMMA       &kp DOT             &kp FSLH
