@@ -98,7 +98,7 @@ behaviors {
         
         
         bindings = <
-    &mt LA(A) LA(G)         &mt LA(N8) LA(N2)           &mt LA(N) LA(N3)           &mt LA(U) LA(N4)         &mt LA(N7) LS(N5)                   &mt LS(MINUS) LS(BSLH)               &kp LA(L)                  &kp LA(SEMI)                &mt LA(M) MINUS                      &mt LS(XEQUAL) LS(APOS)
+    &mt LA(A) LA(G)         &mt LA(N8) LA(N2)           &mt LA(N) LA(N3)           &mt LA(U) LA(N4)         &mt LA(N7) LS(N5)                   &mt LS(MINUS) LS(BSLH)               &kp LA(L)                  &kp LA(SEMI)                &mt LA(M) MINUS                      &mt LS(EQUAL) LS(APOS)
     &kp LSHFT               &kp LCTRL                   &hm LALT LS(N9)            &hm LGUI LS(N0)          &none                               &mt LA(O) LA(BSLH)                   &kp LA(COMMA)              &kp LA(DOT)                 &mt LA(T) LA(I)                      &mt LA(X) LS(N8)
     &mt LA(Q) LA(BSLH)      &none                       &mt LA(C) LA(LBKT)         &mt LA(B) LA(RBKT)       &none                               &mt LA(S) LA(Y)                      &mt LA(F) LA(N9)           &mt LA(D) LS(N1)            &mt LA(N1) LA(R)                     &mt LA(EQUAL) EQUAL
                             &mt LS(LC(LA(LCMD))) ESC    &mt LGUI BSPC              &mt LSHIFT SPACE         &lt 3 ENTER                         &none                                &none                      &none                       &none                               
