@@ -1,132 +1,24 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-
-
-#define DEFAULT 0
-#define NAV     1
-#define SYMB    2
-#define NUMB    3
-#define CONF    4
 
 / {
-
-behaviors {
-      hm: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping_term_ms = <300>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
-    };
-
-
-
-};
-        keymap {
-                compatible = "zmk,keymap";
-
+    keymap {
+        compatible = "zmk,keymap";
 
         default_layer {
-    // | SW1  | SW2  | SW3  | SW4  | SW5  |         | SW6  | SW7  | SW8  | SW9  | SW10 |
-    // | SW11 | SW12 | SW13 | SW14 | SW15 |         | SW16 | SW17 | SW18 | SW19 | SW20 |
-    // | SW21 | SW22 | SW23 | SW24 | SW25 |         | SW26 | SW27 | SW28 | SW29 | SW30 |
-    //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
-                        
-                        
-        bindings = <
-    &kp Q            &kp W                       &kp E           &kp R               &kp T                   &kp Y               &kp U           &kp I           &kp O               &kp P
-    &hm LSHFT A      &hm LCTRL S                 &hm LALT D      &hm LGUI F          &kp G                   &kp H               &hm LGUI J      &hm LALT K      &hm LCTRL L         &hm LSHFT SEMI
-    &kp Z            &kp X                       &kp C           &kp V               &kp B                   &kp N               &kp M           &kp COMMA       &kp DOT             &kp FSLH
-                     &mt LS(LC(LA(LCMD))) ESC    &mt LGUI BSPC   &mt LSHIFT SPACE    &lt 3 ENTER             &lt 1 LGUI(SPACE)   &lt 2 LA(N5)    &kp LA(N6)      &lt 4 TAB
-                
-                
-                >;
-                     };
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |   ESC   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |    \    |
+// |   TAB   |    A    |    S    |    D    |    F    |    G    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |
+// |  SHIFT  |    Z    |    X    |    C    |    V    |    B    | CTRL+A  | CTRL+C  |  |  CTRL+V |  CTRL+X |    N    |    M    |    ,    |    .    |    /    |  R CTRL |
+//                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
+            bindings = <
+    &kp ESC    &kp Q    &kp W    &kp E     &kp R     &kp T                                                 &kp Y     &kp U     &kp I     &kp O     &kp P    &kp BSLH
+    &kp TAB    &kp A    &kp S    &kp D     &kp F     &kp G                                                 &kp H     &kp J     &kp K     &kp L     &kp SEMI &kp SQT
+    &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &kp B      &kp LC(A) &kp LC(C)    &kp LC(V) &kp LC(X) &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RCTRL
+                                 &kp LGUI  &kp DEL   &kp RET    &kp SPACE &kp ESC      &kp RET   &kp SPACE &kp TAB   &kp BSPC  &kp RALT
+            >;
 
-                
-        nav_layer {
-    // | SW1  | SW2  | SW3  | SW4  | SW5  |         | SW6  | SW7  | SW8  | SW9  | SW10 |
-    // | SW11 | SW12 | SW13 | SW14 | SW15 |         | SW16 | SW17 | SW18 | SW19 | SW20 |
-    // | SW21 | SW22 | SW23 | SW24 | SW25 |         | SW26 | SW27 | SW28 | SW29 | SW30 |
-    //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
-                        
-        
-        bindings = <
-    &none            &none                       &none           &none               &mt LS(TILDE) TILDE        &kp LG(MINUS)      &kp LG(EQUAL)        &kp UP          &none            &mt LS(LBKT) LBKT
-    &kp LSHFT        &kp LCTRL                   &kp LALT        &kp LGUI            &none                      &none              &kp LEFT             &kp DOWN        &kp RIGHT        &mt LS(APOS) APOS
-    &none            &none                       &none           &none               &none                      &none              &mt LS(RBKT) RBKT    &none           &none            &none 
-                     &mt LS(LC(LA(LCMD))) ESC    &mt LGUI BSPC   &mt LSHIFT SPACE    &lt 3 ENTER                &none              &none                &none           &none
-                        
-                        
-                >;
-                     };
-        
-        symb_layer {
-    // | SW1  | SW2  | SW3  | SW4  | SW5  |         | SW6  | SW7  | SW8  | SW9  | SW10 |
-    // | SW11 | SW12 | SW13 | SW14 | SW15 |         | SW16 | SW17 | SW18 | SW19 | SW20 |
-    // | SW21 | SW22 | SW23 | SW24 | SW25 |         | SW26 | SW27 | SW28 | SW29 | SW30 |
-    //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
-        
-        
-        bindings = <
-    &mt LA(A) LA(G)         &mt LA(N8) LA(N2)           &mt LA(N) LA(N3)           &mt LA(U) LA(N4)         &mt LA(N7) LS(N5)                   &mt LS(MINUS) LS(BSLH)               &kp LA(L)                  &kp LA(SEMI)                &mt LA(M) MINUS                      &mt LS(EQUAL) LS(APOS)
-    &kp LSHFT               &kp LCTRL                   &hm LALT LS(N9)            &hm LGUI LS(N0)          &none                               &mt LA(O) LA(BSLH)                   &kp LA(COMMA)              &kp LA(DOT)                 &mt LA(T) LA(I)                      &mt LA(X) LS(N8)
-    &mt LA(Q) LA(BSLH)      &none                       &mt LA(C) LA(LBKT)         &mt LA(B) LA(RBKT)       &none                               &mt LA(S) LA(Y)                      &mt LA(F) LA(N9)           &mt LA(D) LS(N1)            &mt LA(N1) LA(R)                     &mt LA(EQUAL) EQUAL
-                            &mt LS(LC(LA(LCMD))) ESC    &mt LGUI BSPC              &mt LSHIFT SPACE         &lt 3 ENTER                         &none                                &none                      &none                       &none                               
-
-
-                        >;
-                };
-
-
-
-
-        numb_layer {
-    // | SW1  | SW2  | SW3  | SW4  | SW5  |         | SW6  | SW7  | SW8  | SW9  | SW10 |
-    // | SW11 | SW12 | SW13 | SW14 | SW15 |         | SW16 | SW17 | SW18 | SW19 | SW20 |
-    // | SW21 | SW22 | SW23 | SW24 | SW25 |         | SW26 | SW27 | SW28 | SW29 | SW30 |
-    //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
-        
-        
-        bindings = <
-    &mt C_PWR LA(LG(Q))       &none                &kp C_BRI_DN               &kp C_BRI_UP          &none                            &kp N1             &kp N2             &mt LS(LG(3)) N3       &mt LA(M) MINUS       &mt LS(EQUAL) LS(APOS)
-    &kp LSHFT                 &kp LCTRL            &hm LALT C_VOL_DN          &hm LGUI C_VOL_UP     &kp K_MUTE                       &mt LS(LG(4)) N4   &mt LS(LG(5)) N5   &kp N6                 &mt LA(T) LA(I)       &mt LA(X) LS(N8)
-    &kp CAPS                  &none                &kp C_PREV                 &kp C_NEXT            &kp C_PP                         &kp N7             &kp N8             &kp N9                 &mt LA(N1) LA(R)      &mt LA(EQUAL) EQUAL
-                              &none                &none                      &none                 &none                            &kp N0             &kp LA(N5)         &kp LA(N5)             &none                               
-
-
-                        >;
-                };
-
-
-
-        conf_layer {
-    // | SW1  | SW2  | SW3  | SW4  | SW5  |         | SW6  | SW7  | SW8  | SW9  | SW10 |
-    // | SW11 | SW12 | SW13 | SW14 | SW15 |         | SW16 | SW17 | SW18 | SW19 | SW20 |
-    // | SW21 | SW22 | SW23 | SW24 | SW25 |         | SW26 | SW27 | SW28 | SW29 | SW30 |
-    //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
-        
-        
-        bindings = <
-    &reset           &none                       &none               &none                 &none                        &kp F1          &kp F2           &kp F3            &none           &bt BT_SEL 0
-    &kp LSHFT        &kp LCTRL                   &kp LALT            &kp LGUI              &bt BT_CLR                   &kp F4          &kp F5           &kp F6            &none           &bt BT_SEL 1
-    &bootloader      &none                       &none               &none                 &none                        &kp F7          &kp F8           &kp F9            &none           &bt BT_SEL 2
-                     &mt LS(LC(LA(LCMD))) ESC    &mt LGUI BSPC       &mt LSHIFT SPACE      &lt 3 ENTER                  &kp F10         &kp F11          &kp F12           &none                               
-
-
-
-                        >;
-                };
-
-
-        }; 
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+    };
 };
-
