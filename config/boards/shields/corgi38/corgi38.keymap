@@ -20,15 +20,16 @@
 / {
 
 behaviors {
-      hm: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping_term_ms = <300>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
-
 
 
 };
@@ -36,7 +37,22 @@ behaviors {
                 compatible = "zmk,keymap";
 
 
-
+        default_layer {
+    // | SW1  | SW2  | SW3  | SW4  | SW5  |         | SW6  | SW7  | SW8  | SW9  | SW10 |
+    // | SW11 | SW12 | SW13 | SW14 | SW15 |         | SW16 | SW17 | SW18 | SW19 | SW20 |
+    // | SW21 | SW22 | SW23 | SW24 | SW25 |         | SW26 | SW27 | SW28 | SW29 | SW30 |
+    //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
+                        
+                        
+        bindings = <
+    &kp Q            &kp W                       &kp E           &kp R               &kp T                   &kp Y                  &kp U               &kp I           &kp O               &kp P
+    &hm LSHFT A      &hm LCTRL S                 &hm LALT D      &hm LGUI F          &kp G                   &kp H                  &hm LGUI J          &hm LALT K      &hm LCTRL L         &hm LSHFT SEMI
+    &kp Z            &kp X                       &kp C           &kp V               &kp B                   &kp N                  &kp M               &none           &none               &none
+                     &mt LS(LC(LA(LCMD))) ESC    &mt LGUI BSPC   &mt LSHIFT SPACE    &lt NUMB ENTER          &lt NAV LGUI(SPACE)    &lt SYMB LA(N5)     &kp LA(N6)      &lt CONF TAB
+                
+                
+                >;
+                     };
 
                 
         nav_layer {
