@@ -2,11 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define DEFAULT 0
-#define NAV     1
-#define SYMB    2
-#define NUMB    3
-#define CONF    4
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -14,11 +10,12 @@
         default_layer {
 
             bindings = <
-    &kp Q            &kp W                       &kp E           &kp R               &kp T                   &kp Y                  &kp U               &kp I           &kp O               &kp P
-    &mt LSHFT A      &mt LCTRL S                 &mt LALT D      &mt LGUI F          &kp G                   &kp H                  &mt LGUI J          &mt LALT K      &mt LCTRL L         &mt LSHFT SEMI
-    &kp Z            &kp X                       &kp C           &kp V               &kp B                   &kp N                  &kp M               &none           &none               &none
-                     &mt LS(LC(LA(LCMD))) ESC    &mt LGUI BSPC   &mt LSHIFT SPACE    &lt NUMB ENTER          &lt NAV LGUI(SPACE)    &lt SYMB LA(N5)     &kp LA(N6)      &lt CONF TAB
->;
+    &kp Q    &kp W    &kp E     &kp R     &kp T                                                 &kp Y     &kp U     &kp I     &kp O   &kp O      
+    &kp A    &kp S    &kp D     &kp F     &kp G                                                 &kp H     &kp J     &kp K     &kp L   &kp O  
+    &kp Z    &kp X    &kp C     &kp V     &kp B                                                 &kp N     &kp M     &kp COMMA &kp DOT &kp O 
+                                 &kp LGUI  &kp DEL   &kp RET    &kp SPACE    &kp SPACE &kp TAB   &kp BSPC  &kp RALT
+            >;
+
         };
     };
 };
