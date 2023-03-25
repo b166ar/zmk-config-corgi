@@ -7,7 +7,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        #define HYPER &kp LS(LC(LA(LCMD)))
+        #define HYPER &kp C // HYPER button
 
 
         default_layer {
