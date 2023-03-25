@@ -1,4 +1,4 @@
-#include "hold_tap.dtsi"
+//#include "hold_tap.dtsi"
 
 morph_minus_plus: morph_minus_plus {
   compatible = "zmk,behavior-mod-morph";
