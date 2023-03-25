@@ -1,0 +1,10 @@
+//#include "hold_tap.dtsi"
+
+ht_hyper_esc: ht_hyper_esc {
+  compatible = "zmk,behavior-hold-tap";
+  label = "HT_HYPER_ESC";
+  #binding-cells = <2>;
+  bindings = <&kp LS(LC(LA(LCMD)))>, <&kp ESC>;
+  flavor = "tap-preferred";
+  tapping-term-ms = <200>;
+};

@@ -11,7 +11,7 @@
 
 
   behaviors {
-    #include "mod_morph.dtsi"
+    #include "hold_tap.dtsi"
   };
 
 
@@ -19,7 +19,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        #define _COMMA_ &morph_comma_underscore
+        #define HYPER_ESC &ht_hyper_esc
 
 
         default_layer {
@@ -28,7 +28,7 @@
     &kp Q           &kp W           &kp E           &kp R           &kp T                            &kp Y         &kp U           &kp I            &kp O           &kp O      
     &mt LSHFT A     &mt LCTRL S     &mt LALT D      &mt LGUI F      &kp G                            &kp H         &mt LGUI J      &mt LALT K       &mt LCTRL L     &mt LSHFT SEMI  
     &kp Z           &kp X           &kp C           &kp V           &kp B                            &kp N         &kp M           &kp COMMA        &kp DOT         &kp O 
-                    _COMMA_         &kp DEL         &kp RET         &kp SPACE                        &kp SPACE     &kp TAB         &kp BSPC         &kp RALT
+                    HYPER_ESC       &kp DEL         &kp RET         &kp SPACE                        &kp SPACE     &kp TAB         &kp BSPC         &kp RALT
             >;
 
         };
