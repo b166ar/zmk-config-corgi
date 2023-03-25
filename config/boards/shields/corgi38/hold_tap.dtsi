@@ -8,4 +8,4 @@ hm: hold_tap_mods {
 };
 
 
-#define HYPER  &hm N4
+#define HYPER  &hm N4 ESC
