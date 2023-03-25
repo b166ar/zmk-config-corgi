@@ -6,7 +6,6 @@
 
 
   behaviors {
- // #include "hold_tap.dtsi"
     #include "mod_morph.dtsi"
   };
 
