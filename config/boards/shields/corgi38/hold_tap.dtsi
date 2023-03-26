@@ -1,3 +1,6 @@
+
+
+//Home Mods config for the default layer. 
 hm: hold_tap_mods {
   compatible = "zmk,behavior-hold-tap";
   label = "HOLD_TAP_MODS";
@@ -6,7 +9,6 @@ hm: hold_tap_mods {
   flavor = "tap-preferred";
   bindings = <&kp>, <&kp>;
 };
-
 
 #define HM_A     &hm LEFT_SHIFT A
 #define HM_S     &hm LEFT_CONTROL S
@@ -31,5 +33,5 @@ hl: hold_tap_layers {
 
 #define NAV_LANG    &hl NAV   LGUI(SPACE)
 #define SYMB_DOT    &hl SYMB  LA(N5)
-#define MUM_ENTER   &hl MUM   ENTER
+#define NUM_ENTER   &hl NUM   ENTER
 #define CONF_TAB    &hl CONF  TAB
