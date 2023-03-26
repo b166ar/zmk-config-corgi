@@ -2,6 +2,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+// LAYERS
+#define DEF   0
+#define NAV   1
+#define SYMB  2
+#define NUM   3
+#define CONF  4
 
 / {
 
@@ -17,13 +23,62 @@
 
         default_layer {
             label = "DEF";
-            bindings = <
+              bindings = <
     &kp Q           &kp W           &kp E           &kp R           &kp T                            &kp Y         &kp U           &kp I            &kp O           &kp P      
     HM_A            HM_S            HM_D            HM_F            &kp G                            &kp H         HM_J            HM_K             HM_L            HM_SEMI  
-    &kp Z           &kp X           &kp C           &kp V           &kp B                            &kp N         &kp M           &kp COMMA        &kp DOT         &none
+    &kp Z           &kp X           &kp C           &kp V           &kp B                            &kp N         &kp M           &none            &none           &none
                     &none           &kp DEL         &kp RET         &kp SPACE                        &kp SPACE         &kp TAB         &kp BSPC         &kp RALT
-            >;
+                      >;
 
-        };
+                      };
+
+        navigation_layer {
+            label = "NAV";
+              bindings = <
+    &kp Q           &kp W           &kp E           &kp R           &kp T                            &kp Y         &kp U           &kp I            &kp O           &kp P      
+    HM_A            HM_S            HM_D            HM_F            &kp G                            &kp H         HM_J            HM_K             HM_L            HM_SEMI  
+    &kp Z           &kp X           &kp C           &kp V           &kp B                            &kp N         &kp M           &none            &none           &none
+                    &none           &kp DEL         &kp RET         &kp SPACE                        &kp SPACE         &kp TAB         &kp BSPC         &kp RALT
+                      >;
+
+                      };
+
+        symbols_layer {
+            label = "SYMB";
+              bindings = <
+    &kp Q           &kp W           &kp E           &kp R           &kp T                            &kp Y         &kp U           &kp I            &kp O           &kp P      
+    HM_A            HM_S            HM_D            HM_F            &kp G                            &kp H         HM_J            HM_K             HM_L            HM_SEMI  
+    &kp Z           &kp X           &kp C           &kp V           &kp B                            &kp N         &kp M           &none            &none           &none
+                    &none           &kp DEL         &kp RET         &kp SPACE                        &kp SPACE         &kp TAB         &kp BSPC         &kp RALT
+                      >;
+
+                      };
+
+
+        numbers_layer {
+            label = "NUM";
+              bindings = <
+    &kp Q           &kp W           &kp E           &kp R           &kp T                            &kp Y         &kp U           &kp I            &kp O           &kp P      
+    HM_A            HM_S            HM_D            HM_F            &kp G                            &kp H         HM_J            HM_K             HM_L            HM_SEMI  
+    &kp Z           &kp X           &kp C           &kp V           &kp B                            &kp N         &kp M           &none            &none           &none
+                    &none           &kp DEL         &kp RET         &kp SPACE                        &kp SPACE         &kp TAB         &kp BSPC         &kp RALT
+                      >;
+
+                      };                 
+
+
+        config_layer {
+            label = "CONF";
+              bindings = <
+    &kp Q           &kp W           &kp E           &kp R           &kp T                            &kp Y         &kp U           &kp I            &kp O           &kp P      
+    HM_A            HM_S            HM_D            HM_F            &kp G                            &kp H         HM_J            HM_K             HM_L            HM_SEMI  
+    &kp Z           &kp X           &kp C           &kp V           &kp B                            &kp N         &kp M           &none            &none           &none
+                    &none           &kp DEL         &kp RET         &kp SPACE                        &kp SPACE         &kp TAB         &kp BSPC         &kp RALT
+                      >;
+
+                      };     
+
+
+
     };
 };
