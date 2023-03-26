@@ -8,4 +8,12 @@ hm: hold_tap_mods {
 };
 
 
-#define HYPER  &hm N4 ESC
+#define HM_A     &hm LEFT_SHIFT A
+#define HM_S     &hm LEFT_CONTROL S
+#define HM_D     &hm LEFT_ALT D
+#define HM_F     &hm LCMD F
+
+#define HM_J     &hm LCMD J
+#define HM_K     &hm LEFT_ALT K
+#define HM_L     &hm LEFT_CONTROL L
+#define HM_SEMI  &hm LEFT_SHIFT SEMI
