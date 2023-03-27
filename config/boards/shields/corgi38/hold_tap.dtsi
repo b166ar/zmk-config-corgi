@@ -41,7 +41,7 @@ hl: hold_tap_layers {
     tapping-term-ms = <200>;
 };
 
-#define ESC_HYPER     &mt LS(LC(LA(LCMD))) ESC
+//#define ESC_HYPER     &mt LS(LC(LA(LCMD))) ESC
 #define BSPC_CMD      &mt LCMD BSPC
 #define SPACE_SHIFT   &mt LEFT_SHIFT SPACE
 
