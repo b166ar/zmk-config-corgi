@@ -31,7 +31,7 @@ hl: hold_tap_layers {
   bindings = <&mo>, <&kp>;
 };
 
-#define NAV_LANG    &hl NAV   LGUI(SPACE)
+#define NAV_LANG    &hl NAV   LG(SPACE)
 #define SYMB_DOT    &hl SYMB  LA(N5)
 #define NUM_ENTER   &hl NUM   ENTER
 #define CONF_TAB    &hl CONF  TAB
