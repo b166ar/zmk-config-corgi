@@ -35,3 +35,14 @@ hl: hold_tap_layers {
 #define SYMB_DOT    &hl SYMB  LA(N5)
 #define NUM_ENTER   &hl NUM   ENTER
 #define CONF_TAB    &hl CONF  TAB
+
+
+&mt {
+    tapping-term-ms = <200>;
+};
+
+#define ESC_HYPER     &mt LS(LC(LA(LCMD))) ESC
+#define BSPC_CMD      &mt LCMD BSPC
+#define SPACE_SHIFT   &mt LEFT_SHIFT SPACE
+
+
