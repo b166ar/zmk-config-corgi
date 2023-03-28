@@ -9,14 +9,31 @@
 #define NUM   3
 #define CONF  4
 
+
+hm: hold_tap_mods {
+  compatible = "zmk,behavior-hold-tap";
+  label = "HOLD_TAP_MODS";
+  #binding-cells = <2>;
+  tapping_term_ms = <300>;
+  flavor = "tap-preferred";
+  bindings = <&kp>, <&kp>;
+};
+
+hl: hold_tap_layers {
+  compatible = "zmk,behavior-hold-tap";
+  label = "HOLD_TAP_LAYERS";
+  #binding-cells = <2>;
+  tapping_term_ms = <300>;
+  flavor = "tap-preferred";
+  bindings = <&mo>, <&kp>;
+};
+
 &mt {
     tapping-term-ms = <200>;
 };
 
 
 / {
-
-
   behaviors {
     #include "hold_tap.dtsi"
   };
@@ -28,9 +45,6 @@
         #define ESC_HYPER     &mt LS(LC(LA(LCMD))) ESC
         #define BSPC_CMD      &mt LCMD BSPC
         #define SPACE_SHIFT   &mt LEFT_SHIFT SPACE
-
-
-
 
         default_layer {
             label = "DEF";
