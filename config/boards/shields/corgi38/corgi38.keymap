@@ -48,6 +48,21 @@ hl: hold_tap_layers {
     keymap {
         compatible = "zmk,keymap";
 
+        #define HM_A          &hm LEFT_SHIFT A
+        #define HM_S          &hm LEFT_CONTROL S
+        #define HM_D          &hm LEFT_ALT D
+        #define HM_F          &hm LCMD F
+
+        #define HM_J          &hm LCMD J
+        #define HM_K          &hm LEFT_ALT K
+        #define HM_L          &hm LEFT_CONTROL L
+        #define HM_SEMI       &hm LEFT_SHIFT SEMI
+
+        #define NAV_LANG      &hl NAV   LG(SPACE)
+        #define SYMB_DOT      &hl SYMB  LA(N5)
+        #define NUM_ENTER     &hl NUM   ENTER
+        #define CONF_TAB      &hl CONF  TAB
+
         #define ESC_HYPER     &mt LS(LC(LA(LCMD))) ESC
         #define BSPC_CMD      &mt LCMD BSPC
         #define SPACE_SHIFT   &mt LEFT_SHIFT SPACE
