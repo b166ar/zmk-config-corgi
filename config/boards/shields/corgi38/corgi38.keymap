@@ -17,10 +17,9 @@
 
 / {
   behaviors {
-    #include "hold_tap.dtsi"
-  };
+    //#include "hold_tap.dtsi"
 
-hm: hold_tap_mods {
+    hm: hold_tap_mods {
   compatible = "zmk,behavior-hold-tap";
   label = "HOLD_TAP_MODS";
   #binding-cells = <2>;
@@ -37,6 +36,10 @@ hl: hold_tap_layers {
   flavor = "tap-preferred";
   bindings = <&mo>, <&kp>;
 };
+
+  };
+
+
 
 
 
