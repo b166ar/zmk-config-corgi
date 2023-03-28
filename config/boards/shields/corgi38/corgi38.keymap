@@ -17,55 +17,59 @@
 
 / {
   behaviors {
-    //#include "hold_tap.dtsi"
 
-    hm: hold_tap_mods {
-  compatible = "zmk,behavior-hold-tap";
-  label = "HOLD_TAP_MODS";
-  #binding-cells = <2>;
-  tapping_term_ms = <300>;
-  flavor = "tap-preferred";
-  bindings = <&kp>, <&kp>;
+  //Home Mods config for the default layer 
+  hm: hold_tap_mods {
+    compatible = "zmk,behavior-hold-tap";
+    label = "HOLD_TAP_MODS";
+    #binding-cells = <2>;
+    tapping_term_ms = <300>;
+    flavor = "tap-preferred";
+    bindings = <&kp>, <&kp>;
 };
 
-hl: hold_tap_layers {
-  compatible = "zmk,behavior-hold-tap";
-  label = "HOLD_TAP_LAYERS";
-  #binding-cells = <2>;
-  tapping_term_ms = <300>;
-  flavor = "tap-preferred";
-  bindings = <&mo>, <&kp>;
+  //Hold-taps for thumb claster (layer switching)
+  hl: hold_tap_layers {
+    compatible = "zmk,behavior-hold-tap";
+    label = "HOLD_TAP_LAYERS";
+    #binding-cells = <2>;
+    tapping_term_ms = <300>;
+    flavor = "tap-preferred";
+    bindings = <&mo>, <&kp>;
 };
 
   };
 
 
-
-
-
-
-
     keymap {
         compatible = "zmk,keymap";
 
-        #define HM_A          &hm LEFT_SHIFT A
-        #define HM_S          &hm LEFT_CONTROL S
-        #define HM_D          &hm LEFT_ALT D
-        #define HM_F          &hm LCMD F
+        //Home Mods for the LEFT half
+        #define HM_A          &hm LEFT_SHIFT A           //SW
+        #define HM_S          &hm LEFT_CONTROL S         //SW
+        #define HM_D          &hm LEFT_ALT D             //SW
+        #define HM_F          &hm LCMD F                 //SW
+        
+        //Home Mods for the RIGHT half 
+        #define HM_J          &hm LCMD J                 //SW
+        #define HM_K          &hm LEFT_ALT K             //SW
+        #define HM_L          &hm LEFT_CONTROL L         //SW
+        #define HM_SEMI       &hm LEFT_SHIFT SEMI        //SW
 
-        #define HM_J          &hm LCMD J
-        #define HM_K          &hm LEFT_ALT K
-        #define HM_L          &hm LEFT_CONTROL L
-        #define HM_SEMI       &hm LEFT_SHIFT SEMI
 
-        #define NAV_LANG      &hl NAV   LG(SPACE)
-        #define SYMB_DOT      &hl SYMB  LA(N5)
-        #define NUM_ENTER     &hl NUM   ENTER
-        #define CONF_TAB      &hl CONF  TAB
+        //Thumbs: three extra modifiers with keypresses
+        #define ESC_HYPER     &mt LS(LC(LA(LCMD))) ESC   //SW31
+        #define BSPC_CMD      &mt LCMD BSPC              //SW32
+        #define SPACE_SHIFT   &mt LEFT_SHIFT SPACE       //SW33
 
-        #define ESC_HYPER     &mt LS(LC(LA(LCMD))) ESC
-        #define BSPC_CMD      &mt LCMD BSPC
-        #define SPACE_SHIFT   &mt LEFT_SHIFT SPACE
+        //Thumbs: four extra layers with keypresses
+        #define NUM_ENTER     &hl NUM   ENTER            //SW34
+        #define NAV_LANG      &hl NAV   LG(SPACE)        //SW35
+        #define SYMB_DOT      &hl SYMB  LA(N5)           //SW36
+        #define MY_COMMA      &kp LA(N6)                 //SW37
+        #define CONF_TAB      &hl CONF  TAB              //SW38
+
+      
 
         default_layer {
             label = "DEF";
