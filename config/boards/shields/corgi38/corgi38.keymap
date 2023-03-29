@@ -97,17 +97,24 @@
 
         //Button mostly related to NAV layer
         //Home Mods for the LEFT half
-        #define DRSS_E         &mt LS(TILDE) TILDE           //SW5 — E with diaeresis (Ë) 
-
-
+        #define DRSS_E         &mt LS(TILDE) TILDE        //SW5 — E with diaeresis (Ë), shifted while holding
+        #define ZOOM_OUT       &kp LG(MINUS)              //SW6 — CMD- shortcut 
+        #define ZOOM_IN        &kp LG(EQUAL)              //SW7 — CMD+ shortcut 
+        #define ARROW_UP       &kp UP                     //SW8 — arrow up
+        #define CYR_X          &mt LS(LBKT) LBKT          //SW10 — Cyrillic x, and X while holding
+        #define ARROW_LEFT     &kp LEFT                   //SW17 — arrow left
+        #define ARROW_DOWN     &kp DOWN                   //SW18 — arrow down
+        #define ARROW_RIGHT    &kp RIGHT                  //SW19 — arrow right
+        #define CYR_E          &mt LS(APOS) APOS          //SW20 — Cyrillic э, and Э while holding
+        #define CYR_HS         &mt LS(RBKT) RBKT          //SW20 — Cyrillic ъ, and Ъ while holding (hard sign)
 
         navigation_layer {
             label = "NAV";
               bindings = <
-    &none           &none           &none           &none           DRSS_E                           &kp Y         &kp U           &kp I            &kp O           &kp P      
-    &kp LSHFT       &kp LCTRL       &kp LALT        &kp LGUI        &none                            &kp H         HM_J            HM_K             HM_L            HM_SEMI  
-    &none           &none           &none           &none           &none                            &kp N         &kp M           &none            &none           &none
-                    ESC_HYPER       BSPC_CMD        SPACE_SHIFT     NUM_ENTER                        &kp SPACE         &kp TAB         &kp BSPC         &kp RALT
+    &none           &none           &none           &none           DRSS_E                           ZOOM_OUT      ZOOM_IN         ARROW_UP         none             CYR_X      
+    &kp LSHFT       &kp LCTRL       &kp LALT        &kp LGUI        &none                            &none         ARROW_LEFT      ARROW_DOWN       ARROW_RIGHT      CYR_E  
+    &none           &none           &none           &none           &none                            &none         CYR_HS          &none            &none            &none
+                    ESC_HYPER       BSPC_CMD        SPACE_SHIFT     NUM_ENTER                        &none         &none           &none            &none
                       >;
 
                       };
