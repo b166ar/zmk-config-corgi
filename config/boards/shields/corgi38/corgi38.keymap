@@ -45,16 +45,16 @@
         compatible = "zmk,keymap";
 
         //Home Mods for the LEFT half
-        #define HM_A          &hm LEFT_SHIFT A           //SW
-        #define HM_S          &hm LEFT_CONTROL S         //SW
-        #define HM_D          &hm LEFT_ALT D             //SW
-        #define HM_F          &hm LCMD F                 //SW
+        #define HM_A          &hm LEFT_SHIFT A           //SW11
+        #define HM_S          &hm LEFT_CONTROL S         //SW12
+        #define HM_D          &hm LEFT_ALT D             //SW13
+        #define HM_F          &hm LCMD F                 //SW14
         
         //Home Mods for the RIGHT half 
-        #define HM_J          &hm LCMD J                 //SW
-        #define HM_K          &hm LEFT_ALT K             //SW
-        #define HM_L          &hm LEFT_CONTROL L         //SW
-        #define HM_SEMI       &hm LEFT_SHIFT SEMI        //SW
+        #define HM_J          &hm LCMD J                 //SW17
+        #define HM_K          &hm LEFT_ALT K             //SW18
+        #define HM_L          &hm LEFT_CONTROL L         //SW19
+        #define HM_SEMI       &hm LEFT_SHIFT SEMI        //SW20
 
 
         //Thumbs: three extra modifiers with keypresses
@@ -77,7 +77,7 @@
     &kp Q           &kp W           &kp E           &kp R           &kp T                            &kp Y         &kp U           &kp I            &kp O           &kp P      
     HM_A            HM_S            HM_D            HM_F            &kp G                            &kp H         HM_J            HM_K             HM_L            HM_SEMI  
     &kp Z           &kp X           &kp C           &kp V           &kp B                            &kp N         &kp M           &none            &none           &none
-                    ESC_HYPER       BSPC_CMD        SPACE_SHIFT     NUM_ENTER                        NAV_LANG      SYMB_DOT        &kp LA(N6)       CONF_TAB
+                    ESC_HYPER       BSPC_CMD        SPACE_SHIFT     NUM_ENTER                        NAV_LANG      SYMB_DOT        MY_COMMA         CONF_TAB
                       >;
 
                       };
