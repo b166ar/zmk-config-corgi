@@ -65,31 +65,31 @@
 
 
         //Thumbs: three extra modifiers with keypresses
-        #define ESC_HYPER     &mt LS(LC(LA(LCMD))) ESC   //SW31
-        #define BSPC_CMD      &mt LCMD BSPC              //SW32
-        #define SPACE_SHIFT   &mt LEFT_SHIFT SPACE       //SW33
+        #define ESC_HYPER     &mt LS(LC(LA(LCMD))) ESC   //SW31 — HYPER on holding, ESC on Tap
+        #define BSPC_CMD      &mt LCMD BSPC              //SW32 — Left CMD on holding, Backspace on Tap
+        #define SPACE_SHIFT   &mt LEFT_SHIFT SPACE       //SW33 — Left Shift on holding, Space on Tap
 
         //Thumbs: four extra layers with keypresses
-        #define NUM_ENTER     &hl NUM   ENTER            //SW34
-        #define NAV_LANG      &hl NAV   LG(SPACE)        //SW35
-        #define SYMB_DOT      &hl SYMB  LA(N5)           //SW36
-        #define MY_COMMA      &kp LA(N6)                 //SW37
-        #define CONF_TAB      &hl CONF  TAB              //SW38
+        #define NUM_ENTER     &hl NUM   ENTER            //SW34 — Number layer on holding, ENTER on Tap
+        #define NAV_LANG      &hl NAV   LG(SPACE)        //SW35 — Navigation layer on holding, CMD+Space (lang change) on Tap
+        #define SYMB_DOT      &hl SYMB  LA(N5)           //SW36 — Symbol layer on holding, custom DOT on Tap
+        #define MY_COMMA      &kp LA(N6)                 //SW37 — Custom comma
+        #define CONF_TAB      &hl CONF  TAB              //SW38 — Confing layer on holding, Tab on Tap
 
 
         //Button related to NAV layer
 
         //Home Mods for the LEFT half
-        #define DRSS_E         &mt LS(TILDE) TILDE        //SW5 — E with diaeresis (Ë), shifted while holding
+        #define DRSS_E         &mt LS(TILDE) TILDE        //SW5 — E with diaeresis (Ë), shifted on holding
         #define ZOOM_OUT       &kp LG(MINUS)              //SW6 — CMD- shortcut 
         #define ZOOM_IN        &kp LG(EQUAL)              //SW7 — CMD+ shortcut 
         #define ARROW_UP       &kp UP                     //SW8 — arrow up
-        #define CYR_X          &mt LS(LBKT) LBKT          //SW10 — Cyrillic x, and X while holding
+        #define CYR_X          &mt LS(LBKT) LBKT          //SW10 — Cyrillic x, and X on holding
         #define ARROW_LEFT     &kp LEFT                   //SW17 — arrow left
         #define ARROW_DOWN     &kp DOWN                   //SW18 — arrow down
         #define ARROW_RIGHT    &kp RIGHT                  //SW19 — arrow right
-        #define CYR_E          &mt LS(APOS) APOS          //SW20 — Cyrillic э, and Э while holding
-        #define CYR_HS         &mt LS(RBKT) RBKT          //SW27 — Cyrillic ъ, and Ъ while holding (hard sign)
+        #define CYR_E          &mt LS(APOS) APOS          //SW20 — Cyrillic э, and Э on holding
+        #define CYR_HS         &mt LS(RBKT) RBKT          //SW27 — Cyrillic ъ, and Ъ on holding (hard sign)
 
 
 
