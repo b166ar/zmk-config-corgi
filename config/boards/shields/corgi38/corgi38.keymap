@@ -124,22 +124,25 @@
         // | SW21 | SW22 | SW23 | SW24 | SW25 |         | SW26 | SW27 | SW28 | SW29 | SW30 |
         //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
               
-        #define S_TILDE         &mt LA(A) LA(G)        //SW1: ~ on tap, ≈ on hold
-        #define S_AT            &mt LA(N8) LA(N2)      //SW2: @ on tap, ∞ on hold
-        #define S_HASH          &mt LA(N) LA(N3)       //SW3: # on tap, № on hold
-        #define S_DOLLAR        &mt LA(U) LA(N4)       //SW4: ₴ on tap, $ on hold
-        #define S_PERCENT       &mt LA(N7) LS(N5)      //SW5: % on tap, & on hold
+        #define S_TILDE         &mt LA(A) LA(G)          //SW1: ~ on tap, ≈ on hold
+        #define S_AT            &mt LA(N8) LA(N2)        //SW2: @ on tap, ∞ on hold
+        #define S_HASH          &mt LA(N) LA(N3)         //SW3: # on tap, № on hold
+        #define S_DOLLAR        &mt LA(U) LA(N4)         //SW4: ₴ on tap, $ on hold
+        #define S_PERCENT       &mt LA(N7) LS(N5)        //SW5: % on tap, & on hold
 
-        #define S_UNDER         &mt LS(BSLH) LS(MINUS) //SW6: _ on tap, | on hold
-        
+        #define S_UNDER         &mt LS(BSLH) LS(MINUS)   //SW6: _ on tap, | on hold
+        #define S_LESSTHAN      &kp LA(L)                //SW7: < on tap
+        #define S_GREATERTHAN   &kp LA(SEMI)             //SW8: > on tap
+        #define S_MINUS         &mt LA(M) MINUS          //SW9: - on tap, − on hold
+        #define S_PLUS          &mt LA(APOS) LS(EQUAL)   //SW10: + on tap, ± on hold
  
         symbols_layer {
             label = "SYMB";
               bindings = <
-                S_TILDE         S_AT            S_HASH          S_DOLLAR        S_PERCENT                        S_UNDER       &kp U           &kp I            &kp O           &kp P      
+                S_TILDE         S_AT            S_HASH          S_DOLLAR        S_PERCENT                        S_UNDER       S_LESSTHAN      S_GREATERTHAN    S_MINUS         S_PLUS      
                 HM_A            HM_S            HM_D            HM_F            &kp G                            &kp H         HM_J            HM_K             HM_L            HM_SEMI  
                 &kp Z           &kp X           &kp C           &kp V           &kp B                            &kp N         &kp M           &none            &none           &none
-                                ESC_HYPER       BSPC_CMD        SPACE_SHIFT     NUM_ENTER                        &none         &none           &none           &none
+                                ESC_HYPER       BSPC_CMD        SPACE_SHIFT     NUM_ENTER                        &none         &none           &none            &none
                                   >;
 
                       };
