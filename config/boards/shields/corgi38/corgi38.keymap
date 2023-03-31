@@ -10,6 +10,7 @@
 #define CONF  4
 
 
+
 &mt {
     tapping-term-ms = <200>;
 };
@@ -64,16 +65,15 @@
 
 
         //Thumbs: three extra modifiers with keypresses
-        #define ESC_HYPER     &mt LS(LC(LA(LCMD))) ESC   //SW31 — HYPER on holding, ESC on Tap
-        #define BSPC_CMD      &mt LCMD BSPC              //SW32 — Left CMD on holding, Backspace on Tap
-        #define SPACE_SHIFT   &mt LEFT_SHIFT SPACE       //SW33 — Left Shift on holding, Space on Tap
+        #define ESC_HYPER     &mt LS(LC(LA(LCMD))) ESC   //SW31 — HYPER on hold, ESC on Tap
+        #define BSPC_CMD      &mt LCMD BSPC              //SW32 — Left CMD on hold, Backspace on Tap
+        #define SPACE_SHIFT   &mt LEFT_SHIFT SPACE       //SW33 — Left Shift on hol, Space on Tap
 
         //Thumbs: four extra layers with keypresses
-        #define NUM_ENTER     &hl NUM   ENTER            //SW34 — Number layer on holding, ENTER on Tap
-        #define NAV_LANG      &hl NAV   LG(SPACE)        //SW35 — Navigation layer on holding, CMD+Space (lang change) on Tap
-        #define SYMB_DOT      &hl SYMB  LA(N5)           //SW36 — Symbol layer on holding, custom DOT on Tap
+        #define NUM_ENTER     &hl NUM   ENTER            //SW34 — Number layer on hold, ENTER on Tap
+        #define NAV_LANG      &hl NAV   LG(SPACE)        //SW35 — Navigation layer on hold, CMD+Space (lang change) on Tap
+        #define SYMB_DOT      &hl SYMB  LA(N5)           //SW36 — Symbol layer on hold, custom DOT on Tap
         #define MY_COMMA      &kp LA(N6)                 //SW37 — Custom comma
-        #define CONF_TAB      &hl CONF  TAB              //SW38 — Confing layer on holding, Tab on Tap
 
         default_layer {
             label = "DEF";
@@ -123,7 +123,8 @@
         // | SW11 | SW12 | SW13 | SW14 | SW15 |         | SW16 | SW17 | SW18 | SW19 | SW20 |
         // | SW21 | SW22 | SW23 | SW24 | SW25 |         | SW26 | SW27 | SW28 | SW29 | SW30 |
         //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
-              
+
+        //ROW 1      
         #define S_TILDE         &mt LA(A) LA(G)          //SW1: ~ on tap, ≈ on hold
         #define S_AT            &mt LA(N8) LA(N2)        //SW2: @ on tap, ∞ on hold
         #define S_HASH          &mt LA(N) LA(N3)         //SW3: # on tap, № on hold
@@ -135,12 +136,25 @@
         #define S_GREATERTHAN   &kp LA(SEMI)             //SW8: > on tap
         #define S_MINUS         &mt LA(M) MINUS          //SW9: - on tap, − on hold
         #define S_PLUS          &mt LA(APOS) LS(EQUAL)   //SW10: + on tap, ± on hold
+
+
+        //ROW 2
+        #define HM_LSHIFT       &kp LSHFT                //SW11: Left Shift on tap
+        #define HM_LCTRL        &kp LCTRL                //SW12: Left Ctrl on tap
+        #define HM_LALT_LPAR    &hm LALT LS(N9)          //SW13: ( on tap, Left Alt on hold
+        #define HM_LCMD_RPAR    &hm LGUI LS(N0)          //SW14: ) on tap, Left CMD on hold
+
+        #define S_DASH          &mt LA(O) LA(BSLH)       //SW16: —(long) on tap, ‒(middle) on hold
+        #define UKR_LPAW        &kp LA(COMMA)            //SW17: « on tap
+        #define UKR_RPAW        &kp LA(DOT)              //SW18: » on tap
+        #define S_SLASH         &mt LA(T) LA(I)          //SW19: / on tap, \ on hold
+        #define S_STAR          &mt LA(X) LS(N8)         //SW20: * on tap, × on hold
  
         symbols_layer {
             label = "SYMB";
               bindings = <
                 S_TILDE         S_AT            S_HASH          S_DOLLAR        S_PERCENT                        S_UNDER       S_LESSTHAN      S_GREATERTHAN    S_MINUS         S_PLUS      
-                HM_A            HM_S            HM_D            HM_F            &kp G                            &kp H         HM_J            HM_K             HM_L            HM_SEMI  
+                HM_LSHIFT       HM_LCTRL        HM_LALT_LPAR    HM_LCMD_RPAR    &none                            S_DASH        UKR_LPAW        UKR_RPAW         S_SLASH         S_STAR  
                 &kp Z           &kp X           &kp C           &kp V           &kp B                            &kp N         &kp M           &none            &none           &none
                                 ESC_HYPER       BSPC_CMD        SPACE_SHIFT     NUM_ENTER                        &none         &none           &none            &none
                                   >;
