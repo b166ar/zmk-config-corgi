@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../../.."
+		},
+		{
+			"path": "../../../../../Downloads/ahokore-zmk-config-master/config-ahakore-internet/boards/arm/ahokore"
+		}
+	],
+	"settings": {}
+}

@@ -64,16 +64,16 @@
 
 
         //Thumbs: three extra modifiers with keypresses
-        #define ESC_HYPER     &mt LS(LC(LA(LCMD))) ESC   //SW31 — HYPER on holding, ESC on Tap
-        #define BSPC_CMD      &mt LCMD BSPC              //SW32 — Left CMD on holding, Backspace on Tap
-        #define SPACE_SHIFT   &mt LEFT_SHIFT SPACE       //SW33 — Left Shift on holding, Space on Tap
+        #define ESC_HYPER     &mt LS(LC(LA(LCMD))) ESC   //SW31 — HYPER on hold, ESC on Tap
+        #define BSPC_CMD      &mt LCMD BSPC              //SW32 — Left CMD on hold, Backspace on Tap
+        #define SPACE_SHIFT   &mt LEFT_SHIFT SPACE       //SW33 — Left Shift on hold, Space on Tap
 
         //Thumbs: four extra layers with keypresses
-        #define NUM_ENTER     &hl NUM   ENTER            //SW34 — Number layer on holding, ENTER on Tap
-        #define NAV_LANG      &hl NAV   LG(SPACE)        //SW35 — Navigation layer on holding, CMD+Space (lang change) on Tap
-        #define SYMB_DOT      &hl SYMB  LA(N5)           //SW36 — Symbol layer on holding, custom DOT on Tap
+        #define NUM_ENTER     &hl NUM   ENTER            //SW34 — Number layer on hold, ENTER on Tap
+        #define NAV_LANG      &hl NAV   LG(SPACE)        //SW35 — Navigation layer on hold, CMD+Space (lang change) on Tap
+        #define SYMB_DOT      &hl SYMB  LA(N5)           //SW36 — Symbol layer on hold, custom DOT on Tap
         #define MY_COMMA      &kp LA(N6)                 //SW37 — Custom comma
-        #define CONF_TAB      &hl CONF  TAB              //SW38 — Confing layer on holding, Tab on Tap
+        #define CONF_TAB      &hl CONF  TAB              //SW38 — Confing layer on hold, Tab on Tap
 
         default_layer {
             label = "DEF";
@@ -94,16 +94,16 @@
 
         //Nav layer
 
-        #define DRSS_E         &mt LS(TILDE) TILDE        //SW5 — E with diaeresis (Ë), shifted on holding
+        #define DRSS_E         &mt LS(TILDE) TILDE        //SW5 — E with diaeresis (Ë), shifted on hold
         #define ZOOM_OUT       &kp LG(MINUS)              //SW6 — CMD- shortcut 
         #define ZOOM_IN        &kp LG(EQUAL)              //SW7 — CMD+ shortcut 
         #define ARROW_UP       &kp UP                     //SW8 — arrow up
-        #define CYR_X          &mt LS(LBKT) LBKT          //SW10 — Cyrillic x, and X on holding
+        #define CYR_X          &mt LS(LBKT) LBKT          //SW10 — Cyrillic x, and X on hold
         #define ARROW_LEFT     &kp LEFT                   //SW17 — arrow left
         #define ARROW_DOWN     &kp DOWN                   //SW18 — arrow down
         #define ARROW_RIGHT    &kp RIGHT                  //SW19 — arrow right
-        #define CYR_E          &mt LS(APOS) APOS          //SW20 — Cyrillic э, and Э on holding
-        #define CYR_HS         &mt LS(RBKT) RBKT          //SW27 — Cyrillic ъ, and Ъ on holding (hard sign)
+        #define CYR_E          &mt LS(APOS) APOS          //SW20 — Cyrillic э, and Э on hold
+        #define CYR_HS         &mt LS(RBKT) RBKT          //SW27 — Cyrillic ъ, and Ъ on hold (hard sign)
 
         navigation_layer {
             label = "NAV";
@@ -148,6 +148,17 @@
         #define UKR_RPAW        &kp LA(DOT)              //SW18: » on tap
         #define S_SLASH         &mt LA(T) LA(I)          //SW19: / on tap, \ on hold
         #define S_STAR          &mt LA(X) LS(N8)         //SW20: * on tap, × on hold
+
+        //ROW 3
+        #define ACCENT_CARET    &mt LS(N6) LA(TILDE)     //SW21: ` on tap, ^ on hold
+        #define LBRKT_LBRACE    &mt LA(C) LA(LBKT)       //SW23: [ on tap, { on hold
+        #define RBRKT_RBRACE    &mt LA(B) LA(RBKT)       //SW24: ] on tap, } on hold
+
+        #define SMCOL_COL       &mt LA(S) LA(Y)          //SW26: ; on tap, : on hold
+        #define S_QMARK         &mt LA(F) LA(N9)         //SW27: ? on tap, ¿ on hold 
+        #define S_EXCLAM        &mt LA(D) LS(N1)         //SW28: ! on tap, ¡ on hold
+        #define APOSTR_QUOTE    &mt LA(N1) LA(R)         //SW29: ' on tap, " on hold
+        #define S_EQUAL         &mt LA(EQUAL) EQUAL      //SW30: = on tap, ≠ on hold
  
         symbols_layer {
             label = "SYMB";
