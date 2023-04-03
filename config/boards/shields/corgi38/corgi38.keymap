@@ -221,14 +221,47 @@
                                                          //SW7: 2 on tap
         #define S_3             &mt LS(LG(3)) N3         //SW8: 3 on tap, Shift+Cmd+3 on hold (screenshot)
                                                          //SW9: - on tap, − on hold
-                                                         //SW10: + on tap, ± on hold                                                 
+                                                         //SW10: + on tap, ± on hold   
+
+        //ROW 2
+                                                         //SW11: Left Shift on tap
+                                                         //SW12: Left Ctrl on tap
+        #define HM_LALT_VLD     &hm LALT C_VOL_DN        //SW13: Volume Down on tap, Left Alt on hold
+        #define HM_LCMD_VLU     &hm LGUI C_VOL_UP        //SW14: Volume Up on tap, Left CMD on hold
+                                                         //SW15: Mute on tap
+
+        #define S_4             &mt LS(LG(4)) N4         //SW16: 4 on tap
+        #define S_5             &mt LS(LG(5)) N5         //SW17: 5 on tapp
+                                                         //SW18: 6 on tap
+                                                         //SW19: / on tap, \ on hold
+                                                         //SW20: * on tap, × on hold
+
+        //ROW 3
+                                                         //SW21: CapsLock on tap
+                                                         //SW22: &none
+                                                         //SW23: Previus on tap
+                                                         //SW24: Next on tap
+                                                         //SW25: Play/Pause on tap
+
+                                                         //SW26: 7 on tap
+                                                         //SW27: 8 on tap 
+                                                         //SW28: 9 on tap
+                                                         //SW29: ' on tap, " on hold
+                                                         //SW30: = on tap, ≠ on hold
+
+        //Right Thumb
+                                                         //SW35: 0 on tap 
+                                                         //SW36: DOT on tap
+                                                         //SW37: Comma on tap
+                                                         //SW38: &none
+
         numbers_layer {
             label = "NUM";
               bindings = <
     POWER_LOCK      &none           &kp C_BRI_DN    &kp C_BRI_UP    &none                            &kp N1        &kp N2          S_3              S_MINUS         S_PLUS      
-    HM_A            HM_S            HM_D            HM_F            &kp G                            &kp H         HM_J            HM_K             S_SLASH         S_STAR  
-    &kp Z           &kp X           &kp C           &kp V           &kp B                            &kp N         &kp M           &none            APOSTR_QUOTE    S_EQUAL
-                    &none           &kp DEL         &kp RET         &kp SPACE                        &kp SPACE     &kp TAB         &kp BSPC         &kp RALT
+    HM_LSHIFT       HM_LCTRL        HM_LALT_VLD     HM_LCMD_VLU     &kp K_MUTE                       S_4           S_5             &kp N6           S_SLASH         S_STAR  
+    &kp CAPS        &none           &kp C_PREV      &kp C_NEXT      &kp C_PP                         &kp N7        &kp N8          &kp N9           APOSTR_QUOTE    S_EQUAL
+                    &none           &none           &none           &none                            &kp N0        &kp LA(N6)      &kp LA(N5)       &none
                       >;
 
                       };                 
