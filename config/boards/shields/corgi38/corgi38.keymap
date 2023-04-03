@@ -87,23 +87,51 @@
                       };
 
 
+        //Nav layer
         // | SW1  | SW2  | SW3  | SW4  | SW5  |         | SW6  | SW7  | SW8  | SW9  | SW10 |
         // | SW11 | SW12 | SW13 | SW14 | SW15 |         | SW16 | SW17 | SW18 | SW19 | SW20 |
         // | SW21 | SW22 | SW23 | SW24 | SW25 |         | SW26 | SW27 | SW28 | SW29 | SW30 |
         //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
 
-        //Nav layer
+        //RAW1
+                                                          //SW1: &none 
+                                                          //SW2: &none                                                  
+                                                          //SW3: &none                                                      
+                                                          //SW4: &none
+        #define DRSS_E         &mt LS(TILDE) TILDE        //SW5: E with diaeresis (Ë), shifted on hold
 
-        #define DRSS_E         &mt LS(TILDE) TILDE        //SW5 — E with diaeresis (Ë), shifted on hold
-        #define ZOOM_OUT       &kp LG(MINUS)              //SW6 — CMD- shortcut 
-        #define ZOOM_IN        &kp LG(EQUAL)              //SW7 — CMD+ shortcut 
-        #define ARROW_UP       &kp UP                     //SW8 — arrow up
-        #define CYR_X          &mt LS(LBKT) LBKT          //SW10 — Cyrillic x, and X on hold
-        #define ARROW_LEFT     &kp LEFT                   //SW17 — arrow left
-        #define ARROW_DOWN     &kp DOWN                   //SW18 — arrow down
-        #define ARROW_RIGHT    &kp RIGHT                  //SW19 — arrow right
-        #define CYR_E          &mt LS(APOS) APOS          //SW20 — Cyrillic э, and Э on hold
-        #define CYR_HS         &mt LS(RBKT) RBKT          //SW27 — Cyrillic ъ, and Ъ on hold (hard sign)
+        #define ZOOM_OUT       &kp LG(MINUS)              //SW6: CMD- shortcut 
+        #define ZOOM_IN        &kp LG(EQUAL)              //SW7: CMD+ shortcut 
+        #define ARROW_UP       &kp UP                     //SW8: arrow up
+                                                          //SW9: &none 
+        #define CYR_X          &mt LS(LBKT) LBKT          //SW10: Cyrillic x, and X on hold
+
+        //RAW2
+                                                          //SW11: LSHFT on tap
+                                                          //SW12: LCTRL on tap 
+                                                          //SW13: LALT on tap
+                                                          //SW14: LGUI on tap
+                                                          //SW15: &none 
+ 
+                                                          //SW16: &none 
+        #define ARROW_LEFT     &kp LEFT                   //SW17: arrow left
+        #define ARROW_DOWN     &kp DOWN                   //SW18: arrow down
+        #define ARROW_RIGHT    &kp RIGHT                  //SW19: arrow right
+        #define CYR_E          &mt LS(APOS) APOS          //SW20: Cyrillic э, and Э on hold
+
+
+        //RAW3
+                                                          //SW21: &none 
+                                                          //SW22: &none                                                  
+                                                          //SW23: &none                                                      
+                                                          //SW24: &none
+                                                          //SW25: &none
+
+                                                          //SW26: &none
+        #define CYR_HS         &mt LS(RBKT) RBKT          //SW27: Cyrillic ъ, and Ъ on hold (hard sign)
+                                                          //SW28: &none                                                      
+                                                          //SW29: &none
+                                                          //SW30: &none
 
         navigation_layer {
             label = "NAV";
@@ -111,7 +139,7 @@
                 &none          &none           &none          &none           DRSS_E                   ZOOM_OUT      ZOOM_IN         ARROW_UP        &none            CYR_X      
                 &kp LSHFT      &kp LCTRL       &kp LALT       &kp LGUI        &none                    &none         ARROW_LEFT      ARROW_DOWN      ARROW_RIGHT      CYR_E
                 &none          &none           &none          &none           &none                    &none         CYR_HS          &none           &none            &none
-                              ESC_HYPER       BSPC_CMD       SPACE_SHIFT     NUM_ENTER                &none         &none           &none           &none
+                               ESC_HYPER       BSPC_CMD       SPACE_SHIFT     NUM_ENTER                 &none         &none           &none           &none
                                   >; 
 
                       };
@@ -142,6 +170,7 @@
         #define HM_LCTRL        &kp LCTRL                //SW12: Left Ctrl on tap
         #define HM_LALT_LPAR    &hm LALT LS(N9)          //SW13: ( on tap, Left Alt on hold
         #define HM_LCMD_RPAR    &hm LGUI LS(N0)          //SW14: ) on tap, Left CMD on hold
+                                                         //SW15: &none
 
         #define S_DASH          &mt LA(O) LA(BSLH)       //SW16: —(long) on tap, ‒(middle) on hold
         #define UKR_LPAW        &kp LA(COMMA)            //SW17: « on tap
@@ -151,8 +180,10 @@
 
         //ROW 3
         #define ACCENT_CARET    &mt LS(N6) LA(TILDE)     //SW21: ` on tap, ^ on hold
+                                                         //SW22: &none
         #define LBRKT_LBRACE    &mt LA(C) LA(LBKT)       //SW23: [ on tap, { on hold
         #define RBRKT_RBRACE    &mt LA(B) LA(RBKT)       //SW24: ] on tap, } on hold
+                                                         //SW25: &none
 
         #define SMCOL_COL       &mt LA(S) LA(Y)          //SW26: ; on tap, : on hold
         #define S_QMARK         &mt LA(F) LA(N9)         //SW27: ? on tap, ¿ on hold 
@@ -191,21 +222,22 @@
         #define S_3             &mt LS(LG(3)) N3         //SW8: 3 on tap, Shift+Cmd+3 on hold (screenshot)
                                                          //SW9: - on tap, − on hold
                                                          //SW10: + on tap, ± on hold                                                 
-
-
-
-
-
         numbers_layer {
             label = "NUM";
               bindings = <
     POWER_LOCK      &none           &kp C_BRI_DN    &kp C_BRI_UP    &none                            &kp N1        &kp N2          S_3              S_MINUS         S_PLUS      
     HM_A            HM_S            HM_D            HM_F            &kp G                            &kp H         HM_J            HM_K             S_SLASH         S_STAR  
     &kp Z           &kp X           &kp C           &kp V           &kp B                            &kp N         &kp M           &none            APOSTR_QUOTE    S_EQUAL
-                    &none           &kp DEL         &kp RET         &kp SPACE                        &kp SPACE         &kp TAB         &kp BSPC         &kp RALT
+                    &none           &kp DEL         &kp RET         &kp SPACE                        &kp SPACE     &kp TAB         &kp BSPC         &kp RALT
                       >;
 
                       };                 
+
+
+
+
+
+
 
 
         config_layer {
