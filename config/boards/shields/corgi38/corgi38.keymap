@@ -180,7 +180,7 @@
         //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
 
         //ROW 1  
-        #define POWER_LOCK      C_PWR LA(LG(Q))          //SW1: Lock on tap, Power on hold
+        #define POWER_LOCK      &mt C_PWR LA(LG(Q))      //SW1: Lock on tap, Power on hold
                                                          //SW2: &none
                                                          //SW3: C_BRI_DN — brightness DOWN
                                                          //SW4: C_BRI_DN — brightness UP
