@@ -275,7 +275,7 @@
         //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
 
         //ROW 1  
-                                                         //SW1: 
+                                                         //SW1: Reset the keyboard and re-run the firmware flashed to the device, on tap
                                                          //SW2: &none
                                                          //SW3: &none
                                                          //SW4: &none
@@ -285,7 +285,7 @@
                                                          //SW7: F2 on tap
                                                          //SW8: F3 on tap
                                                          //SW9: &none
-                                                         //SW10: Select the main (0) bt-rofile, on hold
+                                                         //SW10: Select the main (0) bt-rofile, on tap
 
         //ROW 2
                                                          //SW11: Left Shift on tap
@@ -298,10 +298,10 @@
                                                          //SW17: F5 on tap
                                                          //SW18: F6 on tap
                                                          //SW19: &none
-                                                         //SW20: Select the 2st (1) bt-rofile, on hold
+                                                         //SW20: Select the 2st (1) bt-rofile, on tap
 
         //ROW 3
-                                                         //SW21: Reset the keyboard and put it into bootloader mode, on hold
+                                                         //SW21: Reset the keyboard and put it into bootloader mode, on tap
                                                          //SW22: &none
                                                          //SW23: &none
                                                          //SW24: &none
@@ -311,7 +311,7 @@
                                                          //SW27: F8 on tap
                                                          //SW28: F9 on tap 
                                                          //SW29: &none
-                                                         //SW30: Select the 3st (2) bt-rofile, on hold
+                                                         //SW30: Select the 3st (2) bt-rofile, on tap
 
         //Right Thumb
                                                          //SW35: F10 on tap 
