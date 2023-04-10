@@ -274,7 +274,50 @@
         // | SW21 | SW22 | SW23 | SW24 | SW25 |         | SW26 | SW27 | SW28 | SW29 | SW30 |
         //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
 
-        //ROW 1
+        //ROW 1  
+                                                         //SW1: 
+                                                         //SW2: &none
+                                                         //SW3: &none
+                                                         //SW4: &none
+                                                         //SW2: &none
+
+                                                         //SW6: F1 on tap
+                                                         //SW7: F2 on tap
+                                                         //SW8: F3 on tap
+                                                         //SW9: &none
+                                                         //SW10:  
+
+        //ROW 2
+                                                         //SW11: Left Shift on tap
+                                                         //SW12: Left Ctrl on tap
+                                                         //SW13: Left Alt on tap
+                                                         //SW14: Left CMD on tap
+                                                         //SW15: 
+
+                                                         //SW16:
+                                                         //SW17: 
+                                                         //SW18:
+                                                         //SW19:
+                                                         //SW20:
+
+        //ROW 3
+                                                         //SW21:
+                                                         //SW22:
+                                                         //SW23:
+                                                         //SW24:
+                                                         //SW25:
+
+                                                         //SW26:
+                                                         //SW27:
+                                                         //SW28: 
+                                                         //SW29: 
+                                                         //SW30: 
+
+        //Right Thumb
+                                                         //SW35:  
+                                                         //SW36:  
+                                                         //SW37:  
+                                                         //SW38:  
 
 
 
