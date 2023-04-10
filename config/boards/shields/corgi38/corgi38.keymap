@@ -285,46 +285,46 @@
                                                          //SW7: F2 on tap
                                                          //SW8: F3 on tap
                                                          //SW9: &none
-                                                         //SW10:  
+                                                         //SW10: Select the main (0) bt-rofile, on hold
 
         //ROW 2
                                                          //SW11: Left Shift on tap
                                                          //SW12: Left Ctrl on tap
                                                          //SW13: Left Alt on tap
                                                          //SW14: Left CMD on tap
-                                                         //SW15: 
+                                                         //SW15: Clear bond information between the keyboard and host for the selected profile
 
-                                                         //SW16:
-                                                         //SW17: 
-                                                         //SW18:
-                                                         //SW19:
-                                                         //SW20:
+                                                         //SW16: F4 on tap
+                                                         //SW17: F5 on tap
+                                                         //SW18: F6 on tap
+                                                         //SW19: &none
+                                                         //SW20: Select the 2st (1) bt-rofile, on hold
 
         //ROW 3
-                                                         //SW21:
-                                                         //SW22:
-                                                         //SW23:
-                                                         //SW24:
-                                                         //SW25:
+                                                         //SW21: Reset the keyboard and put it into bootloader mode, on hold
+                                                         //SW22: &none
+                                                         //SW23: &none
+                                                         //SW24: &none
+                                                         //SW25: &none
 
-                                                         //SW26:
-                                                         //SW27:
-                                                         //SW28: 
-                                                         //SW29: 
-                                                         //SW30: 
+                                                         //SW26: F7 on tap
+                                                         //SW27: F8 on tap
+                                                         //SW28: F9 on tap 
+                                                         //SW29: &none
+                                                         //SW30: Select the 3st (2) bt-rofile, on hold
 
         //Right Thumb
-                                                         //SW35:  
-                                                         //SW36:  
-                                                         //SW37:  
-                                                         //SW38:  
+                                                         //SW35: F10 on tap 
+                                                         //SW36: F11 on tap 
+                                                         //SW37: F12 on tap 
+                                                         //SW38: &none
 
 
 
         config_layer {
             label = "CONF";
               bindings = <
-                &reset          &none           &none           &none           &none                            &kp F1          &kp F2           &kp F3            &none           &bt BT_SEL 0      
+                &sys_reset      &none           &none           &none           &none                            &kp F1          &kp F2           &kp F3            &none           &bt BT_SEL 0      
                 &kp LSHFT       &kp LCTRL       &kp LALT        &kp LGUI        &bt BT_CLR                       &kp F4          &kp F5           &kp F6            &none           &bt BT_SEL 1  
                 &bootloader     &none           &none           &none           &none                            &kp F7          &kp F8           &kp F9            &none           &bt BT_SEL 2
                                 ESC_HYPER       BSPC_CMD        SPACE_SHIFT     NUM_ENTER                        &kp F10         &kp F11          &kp F12           &none
