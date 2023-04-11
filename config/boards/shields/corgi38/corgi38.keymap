@@ -29,7 +29,7 @@
 
   behaviors {
 
-  //HYPER on hold, ESC on Tap, Alt+Cmd+ESC on 3 taps (Tap-Dance Behavior) 
+  //HYPER on hold, ESC on Tap, Alt+Cmd+ESC on 4 taps (Tap-Dance Behavior) 
   esc_hyper_fquit: tap_dance_mod_tap {
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_MOD_TAP";
@@ -38,7 +38,7 @@
     bindings = <&mt LS(LC(LA(LCMD))) ESC>, <&none>, <&none>, <&kp LA(LG(ESC))>;
         };
 
-  //Home Mods config for the default layer 
+  //Home Mods config for the default layer  
   hm: hold_tap_mods {
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_MODS";
