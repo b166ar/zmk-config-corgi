@@ -34,7 +34,7 @@
             label = "TAP_DANCE_MOD_TAP";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = < &mt LS(LC(LA(LCMD))) ESC>, <&none>, <&kp LA(LG(ESC))>;
+            bindings = <&mt LS(LC(LA(LCMD))) ESC>, <&none>, <&kp LA(LG(ESC))>;
         };
 
   //Home Mods config for the default layer 
