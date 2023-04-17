@@ -38,6 +38,15 @@
     bindings = <&mt LS(LC(LA(LCMD))) ESC>, <&none>, <&none>, <&kp LA(LG(ESC))>;
         };
 
+  //Prev Lang on tap, Nav on hold, Alt+Opt+Space on 2 taps (Tap-Dance Behavior) 
+  lang_nav_lang: tap_dance_mod_tap {
+    compatible = "zmk,behavior-tap-dance";
+    label = "TAP_DANCE_MOD_TAP";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&mt NAV LG(SPACE)>, <&kp LC(LA(SPACE))>;
+        };
+
   //Home Mods config for the default layer  
   hm: hold_tap_mods {
     compatible = "zmk,behavior-hold-tap";
