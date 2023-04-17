@@ -39,7 +39,7 @@
         };
 
   //Prev Lang on tap, Nav on hold, Alt+Opt+Space on 2 taps (Tap-Dance Behavior) 
-  lang_nav_lang: tap_dance_mod_tap {
+  lang_nav_lang: lang_lang {
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_MOD_TAP";
     #binding-cells = <0>;
