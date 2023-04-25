@@ -44,7 +44,7 @@
     label = "TAP_DANCE_MOD_TAP";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
-    bindings = <&mt NAV LG(SPACE)>, <&kp LC(LA(SPACE))>;
+    bindings = <&hl NAV LG(SPACE)>, <&kp LC(LA(SPACE))>;
         };
 
   //Home Mods config for the default layer  
@@ -109,7 +109,7 @@
               bindings = <
                 &kp Q       &kp W           &kp E          &kp R           &kp T                     &kp Y         &kp U         &kp I          &kp O         &kp P      
                 HM_A        HM_S            HM_D           HM_F            &kp G                     &kp H         HM_J          HM_K           HM_L          HM_SEMI  
-                &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &none          &none         &none
+                &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &kp COMMA      &kp DOT       &kp SLASH
                             ESC_HYPER_TD    BSPC_CMD       SPACE_SHIFT     NUM_ENTER                 NAV_LANG      SYMB_DOT      MY_COMMA       CONF_TAB
                                   >;
 
