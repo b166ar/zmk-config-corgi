@@ -201,7 +201,7 @@
         #define HM_LCMD_RPAR    &hm LGUI LS(N0)          //SW14: ) on tap, Left CMD on hold
                                                          //SW15: &none
 
-        #define S_DASH          &mt LA(O) LA(MINUS)      //SW16: —(long) on tap, ‒(middle) on hold
+        #define S_DASH          &kp LA(MINUS)      //SW16: —(long) on tap, ‒(middle) on hold
         #define UKR_LPAW        &kp LA(COMMA)            //SW17: « on tap
         #define UKR_RPAW        &kp LA(DOT)              //SW18: » on tap
         #define S_SLASH         &mt LA(T) LA(I)          //SW19: / on tap, \ on hold
