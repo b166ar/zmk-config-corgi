@@ -99,7 +99,7 @@
 
         //Thumbs: four extra layers with keypresses
         #define NUM_ENTER     &hl NUM   ENTER            //SW34 — Number layer on hold, ENTER on Tap
-        #define NAV_LANG      &lang_nav_lang             //SW35 — Navigation layer on hold, CMD+Space (lang change) on Tap
+        #define NAV_LANG      &hl NAV LG(SPACE)          //SW35 — Navigation layer onf hold, CMD+Space (lang change) on Tap
         #define SYMB_DOT      &hl SYMB  LA(N5)           //SW36 — Symbol layer on hold, custom DOT on Tap
         #define MY_COMMA      &kp LA(N6)                 //SW37 — Custom comma
         #define CONF_TAB      &hl CONF  TAB              //SW38 — Confing layer on hold, Tab on Tap
