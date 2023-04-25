@@ -127,13 +127,13 @@
                                                           //SW2: &none                                                  
                                                           //SW3: &none                                                      
                                                           //SW4: &none
-        #define DRSS_E         &mt LS(TILDE) TILDE        //SW5: E with diaeresis (Ë), shifted on hold
+        #define DRSS_E         &mt LS(GRAVE) GRAVE        //SW5: E with diaeresis (Ë), shifted on hold
 
         #define ZOOM_OUT       &kp LG(MINUS)              //SW6: CMD- shortcut 
         #define ZOOM_IN        &kp LG(EQUAL)              //SW7: CMD+ shortcut 
         #define ARROW_UP       &kp UP                     //SW8: arrow up
                                                           //SW9: &none 
-        #define CYR_X          &mt LS(LBKT) LBKT          //SW10: Cyrillic x, and X on hold
+        #define CYR_X          &mt LS(LBKT) LBKT         //SW10: Cyrillic x, and X on hold
 
         //RAW2
                                                           //SW11: LSHFT on tap
@@ -201,14 +201,14 @@
         #define HM_LCMD_RPAR    &hm LGUI LS(N0)          //SW14: ) on tap, Left CMD on hold
                                                          //SW15: &none
 
-        #define S_DASH          &mt LA(O) LA(BSLH)       //SW16: —(long) on tap, ‒(middle) on hold
+        #define S_DASH          &mt LA(O) LA(KP_MINUS)   //SW16: —(long) on tap, ‒(middle) on hold
         #define UKR_LPAW        &kp LA(COMMA)            //SW17: « on tap
         #define UKR_RPAW        &kp LA(DOT)              //SW18: » on tap
         #define S_SLASH         &mt LA(T) LA(I)          //SW19: / on tap, \ on hold
         #define S_STAR          &mt LA(X) LS(N8)         //SW20: * on tap, × on hold
 
         //ROW 3
-        #define ACCENT_CARET    &mt LS(N6) LA(TILDE)     //SW21: ` on tap, ^ on hold
+        #define ACCENT_CARET    &mt LA(Q) LA(TILDE)     //SW21: ` on tap, ^ on hold
                                                          //SW22: &none
         #define LBRKT_LBRACE    &mt LA(C) LA(LBKT)       //SW23: [ on tap, { on hold
         #define RBRKT_RBRACE    &mt LA(B) LA(RBKT)       //SW24: ] on tap, } on hold
@@ -248,7 +248,7 @@
 
                                                          //SW6: 1 on tap
                                                          //SW7: 2 on tap
-        #define S_3             &mt LS(LG(3)) N3         //SW8: 3 on tap, Shift+Cmd+3 on hold (screenshot)
+        #define S_3             &mt LS(LG(N3)) N3         //SW8: 3 on tap, Shift+Cmd+3 on hold (screenshot)
                                                          //SW9: - on tap, − on hold
                                                          //SW10: + on tap, ± on hold   
 
@@ -259,8 +259,8 @@
         #define HM_LCMD_VLU     &hm LGUI C_VOL_UP        //SW14: Volume Up on tap, Left CMD on hold
                                                          //SW15: Mute on tap
 
-        #define S_4             &mt LS(LG(4)) N4         //SW16: 4 on tap
-        #define S_5             &mt LS(LG(5)) N5         //SW17: 5 on tapp
+        #define S_4             &mt LS(LG(N4)) N4         //SW16: 4 on tap
+        #define S_5             &mt LS(LG(N5)) N5         //SW17: 5 on tapp
                                                          //SW18: 6 on tap
                                                          //SW19: / on tap, \ on hold
                                                          //SW20: * on tap, × on hold
