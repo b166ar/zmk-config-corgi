@@ -34,7 +34,7 @@
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_MOD_TAP";
     #binding-cells = <0>;
-    tapping-term-ms = <100>;
+    tapping-term-ms = <200>;
     bindings = <&mt LS(LC(LA(LCMD))) ESC>, <&none>, <&none>, <&kp LA(LG(ESC))>;
         };
 
@@ -43,6 +43,7 @@
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_MOD_TAP";
     #binding-cells = <0>;
+    tapping-term-ms = <200>;
     bindings = <&mt NAV LG(SPACE)>, <&kp LC(LA(SPACE))>;
         };
 
@@ -51,7 +52,7 @@
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_MODS";
     #binding-cells = <2>;
-    tapping_term_ms = <400>;
+    tapping_term_ms = <300>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 };
@@ -61,9 +62,9 @@
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_LAYERS";
     #binding-cells = <2>;
-    tapping_term_ms = <200>;
+    tapping_term_ms = <300>;
     flavor = "tap-preferred";
-    bindings = <&lt>, <&kp>;
+    bindings = <&mo>, <&kp>;
 };
 
   };
