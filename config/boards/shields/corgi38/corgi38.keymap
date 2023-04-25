@@ -201,7 +201,7 @@
         #define HM_LCMD_RPAR    &hm LGUI LS(N0)          //SW14: ) on tap, Left CMD on hold
                                                          //SW15: &none
 
-        #define S_DASH          &mt LA(O) LA(KP_MINUS)   //SW16: —(long) on tap, ‒(middle) on hold
+        #define S_DASH          &mt LA(O) LA(MINUS)      //SW16: —(long) on tap, ‒(middle) on hold
         #define UKR_LPAW        &kp LA(COMMA)            //SW17: « on tap
         #define UKR_RPAW        &kp LA(DOT)              //SW18: » on tap
         #define S_SLASH         &mt LA(T) LA(I)          //SW19: / on tap, \ on hold
@@ -240,7 +240,7 @@
         //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
 
         //ROW 1  
-        #define POWER_LOCK      &mt C_PWR LA(LG(Q))      //SW1: Lock on tap, Power on hold
+        #define POWER_LOCK      &mt C_PWR LC(LG(Q))      //SW1: Lock on tap, Power on hold
                                                          //SW2: &none
                                                          //SW3: C_BRI_DN — brightness DOWN
                                                          //SW4: C_BRI_DN — brightness UP
