@@ -93,7 +93,7 @@
 
 
         //Thumbs: three extra modifiers with keypresses
-        #define ESC_HYPER_TD  &esc_hyper_fquit           //SW31 — HYPER on hold, ESC on Tap, Alt+Cmd+ESC on 3 taps (Tap-Dance Behavior)
+        #define ESC_HYPER_TD  &mt LS(LC(LA(LCMD))) ESC           //SW31 — HYPER on hold, ESC on Tap, Alt+Cmd+ESC on 3 taps (Tap-Dance Behavior)
         #define BSPC_CMD      &mt LCMD BSPC              //SW32 — Left CMD on hold, Backspace on Tap
         #define SPACE_SHIFT   &mt LEFT_SHIFT SPACE       //SW33 — Left Shift on hold, Space on Tap
 
