@@ -57,9 +57,9 @@
 };
 
   //Home Mods config for the default layer  
-  zz: zz {
+  ssh: space_sticky_shift {
     compatible = "zmk,behavior-hold-tap";
-    label = "HOLD_TAP_zz";
+    label = "space_sticky_shift";
     #binding-cells = <2>;
     tapping_term_ms = <300>;
     flavor = "tap-preferred";
@@ -104,7 +104,7 @@
         //Thumbs: three extra modifiers with keypresses
         #define ESC_HYPER_TD  &mt LS(LC(LA(LCMD))) ESC           //SW31 — HYPER on hold, ESC on Tap, Alt+Cmd+ESC on 3 taps (Tap-Dance Behavior)
         #define BSPC_CMD      &mt LCMD BSPC              //SW32 — Left CMD on hold, Backspace on Tap
-        #define SPACE_SHIFT   &zz SPACE LSHIFT      //SW33 — Left Shift on hold, Space on Tap
+        #define SPACE_SHIFT   &ssh SPACE LSHIFT      //SW33 — Left Shift on hold, Space on Tap
 
         //Thumbs: four extra layers with keypresses
         #define NUM_ENTER     &hl NUM   ENTER            //SW34 — Number layer on hold, ENTER on Tap
