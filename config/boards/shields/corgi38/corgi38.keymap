@@ -95,7 +95,7 @@
         //Thumbs: three extra modifiers with keypresses
         #define ESC_HYPER_TD  &mt LS(LC(LA(LCMD))) ESC   //SW31 — HYPER on hold, ESC on Tap, Alt+Cmd+ESC on 3 taps (Tap-Dance Behavior)
         #define BSPC_CMD      &mt LCMD BSPC              //SW32 — Left CMD on hold, Backspace on Tap
-        #define SPACE_SHIFT   &kp SPACE       //SW33 — Left Shift on hold, Space on Tap
+        #define SPACE_SHIFT   &kp SPACE &sk LSHIFT       //SW33 — Left Shift on hold, Space on Tap
 
         //Thumbs: four extra layers with keypresses
         #define NUM_ENTER     &hl NUM   ENTER            //SW34 — Number layer on hold, ENTER on Tap
@@ -115,7 +115,7 @@
 
                       };
 
-f
+
         //Nav layer
         // | SW1  | SW2  | SW3  | SW4  | SW5  |         | SW6  | SW7  | SW8  | SW9  | SW10 |
         // | SW11 | SW12 | SW13 | SW14 | SW15 |         | SW16 | SW17 | SW18 | SW19 | SW20 |
