@@ -27,6 +27,16 @@
         };
     };
 
+  //Caps Word Behavior, tap SW11 and SW20 at the same time
+  combos {
+    compatible = "zmk,combos";
+    combo_lang {
+    timeout-ms = <50>;
+    key-positions = <33 34>;
+    bindings = <&kp LG(SPACE)>;
+        };
+    };
+
   behaviors {
 
   //HYPER on hold, ESC on Tap, Alt+Cmd+ESC on 4 taps (Tap-Dance Behavior) 
@@ -99,7 +109,7 @@
 
         //Thumbs: four extra layers with keypresses
         #define NUM_ENTER     &hl NUM   ENTER            //SW34 — Number layer on hold, ENTER on Tap
-        #define NAV_LANG      &hl NAV LG(SPACE)          //SW35 — Navigation layer onf hold, CMD+Space (lang change) on Tap
+        #define NAV_LANG      &hl NAV SPACE          //SW35 — Navigation layer onf hold, CMD+Space (lang change) on Tap
         #define SYMB_DOT      &hl SYMB  LA(N5)           //SW36 — Symbol layer on hold, custom DOT on Tap
         #define MY_COMMA      &kp LA(N6)                 //SW37 — Custom comma
         #define CONF_TAB      &hl CONF  TAB              //SW38 — Confing layer on hold, Tab on Tap
