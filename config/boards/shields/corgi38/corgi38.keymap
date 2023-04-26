@@ -27,8 +27,8 @@
         };
     };
 
-  //Caps Word Behavior, tap SW11 and SW20 at the same time
-  combos {
+  //Caps Word Behavior, tap SW33 and SW34 to switch language
+  combos2 {
     compatible = "zmk,combos";
     combo_lang {
     timeout-ms = <50>;
