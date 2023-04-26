@@ -108,8 +108,8 @@
 
         //Thumbs: four extra layers with keypresses
         #define NUM_ENTER     &hl NUM   ENTER            //SW34 — Number layer on hold, ENTER on Tap
-        #define NAV_SPACE     &hl NAV SPACE          //SW35 — Navigation layer onf hold, CMD+Space (lang change) on Tap
-        #define SYMB_DOT      &hl SYMB  LA(N5)           //SW36 — Symbol layer on hold, custom DOT on Tap
+        #define NAV_COMMA     &hl NAV   LA(N5)          //SW35 — Navigation layer onf hold, CMD+Space (lang change) on Tap
+        #define SYMB_SPACE    &hl SYMB  SPACE           //SW36 — Symbol layer on hold, custom DOT on Tap
         #define MY_COMMA      &kp LA(N6)                 //SW37 — Custom comma
         #define CONF_TAB      &hl CONF  TAB              //SW38 — Confing layer on hold, Tab on Tap
 
@@ -119,7 +119,7 @@
                 &kp Q       &kp W           &kp E          &kp R           &kp T                     &kp Y         &kp U         &kp I          &kp O         &kp P      
                 HM_A        HM_S            HM_D           HM_F            &kp G                     &kp H         HM_J          HM_K           HM_L          HM_SEMI  
                 &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &kp COMMA      &kp DOT       &kp SLASH
-                            ESC_HYPER_TD    SPACE_SHIFT    BSPC_CMD        NUM_ENTER                 NAV_SPACE      SYMB_DOT      MY_COMMA       CONF_TAB
+                            ESC_HYPER_TD    SPACE_SHIFT    BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_COMMA     CONF_TAB
                                   >;
 
                       };
@@ -299,7 +299,7 @@
                 POWER_LOCK      &none           &kp C_BRI_DN    &kp C_BRI_UP    &none                            &kp N1        &kp N2          S_3              S_MINUS         S_PLUS      
                 HM_LSHIFT       HM_LCTRL        HM_LALT_VLD     HM_LCMD_VLU     &kp K_MUTE                       S_4           S_5             &kp N6           S_SLASH         S_STAR  
                 &kp CAPS        &none           &kp C_PREV      &kp C_NEXT      &kp C_PP                         &kp N7        &kp N8          &kp N9           APOSTR_QUOTE    S_EQUAL
-                                &none           &none           &none           &none                            &kp N0        &kp LA(N6)      &kp LA(N5)       &none
+                                &none           &none           &none           &none                            &kp LA(N5)    &kp N0          &kp LA(N6)     &none
                       >;
 
                       };                 
