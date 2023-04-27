@@ -67,7 +67,7 @@
 };
 
   //Hold-taps for 
-  иthumb claster (layer switching)
+  thumb claster (layer switching)
   hl: hold_tap_layers {
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_LAYERS";
