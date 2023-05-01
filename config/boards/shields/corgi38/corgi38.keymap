@@ -111,7 +111,7 @@
 
         //Thumbs: three extra modifiers with keypresses
         #define ESC_HYPER_TD  &mt LS(LC(LA(LCMD))) ESC   //SW31 — HYPER on hold, ESC on Tap
-        #define SPACE_ESC     &esc_space             //SW32 — Left CMD on hold, Backspace on Tap
+        #define SPACE_ESC     &esc_space                 //SW32 — Left CMD on hold, Backspace on Tap
         #define BSPC_CMD      &mt LCMD BSPC              //SW33 — Left Shift on hold, Space on Tap
 
         //Thumbs: four extra layers with keypresses
@@ -127,7 +127,7 @@
                 &kp Q       &kp W           &kp E          &kp R           &kp T                     &kp Y         &kp U         &kp I          &kp O         &kp P      
                 HM_A        HM_S            HM_D           HM_F            &kp G                     &kp H         HM_J          HM_K           HM_L          HM_SEMI  
                 &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &kp COMMA      &kp DOT       &lang2
-                            &none           SPACE_ESC      BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    &kp LA(N6)     &none
+                            &none           &esc_space     BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    &kp LA(N6)     &none
                                   >;
 
                       };
@@ -185,7 +185,7 @@
                 &none          &none           &none          &none           DRSS_E                   ZOOM_OUT      ZOOM_IN         ARROW_UP        &none            CYR_X      
                 &kp LSHFT      &kp LCTRL       &kp LALT       &kp LGUI        &none                    &kp TAB       ARROW_LEFT      ARROW_DOWN      ARROW_RIGHT      CYR_E
                 &none          &none           &none          &none           &none                    &none         CYR_HS          &none           &none            &none
-                               &none    SPACE_ESC      BSPC_CMD        NUM_ENTER                &none         &none           &none           &none
+                               &none           &esc_space     BSPC_CMD        NUM_ENTER                &none         &none           &none           &none
                                   >; 
 
                       };
@@ -243,7 +243,7 @@
                 S_TILDE         S_AT            S_HASH          S_DOLLAR        S_PERCENT                        S_UNDER       S_LESSTHAN      S_GREATERTHAN    S_MINUS         S_PLUS      
                 HM_LSHIFT       HM_LCTRL        HM_LALT_LPAR    HM_LCMD_RPAR    &none                            S_DASH        UKR_LPAW        UKR_RPAW         S_SLASH         S_STAR  
                 ACCENT_CARET    &none           LBRKT_LBRACE    RBRKT_RBRACE    &none                            SMCOL_COL     S_QMARK         S_EXCLAM         APOSTR_QUOTE    S_EQUAL
-                                &none    SPACE_ESC      BSPC_CMD        NUM_ENTER                        &none         &none           &none            &none
+                                &none           &esc_space      BSPC_CMD        NUM_ENTER                        &none         &none           &none            &none
                                   >;
 
                       };
@@ -373,7 +373,7 @@
                 &sys_reset      &none           &none           &none           &none                            &kp F1          &kp F2           &kp F3            &none           &bt BT_SEL 0      
                 &kp LSHFT       &kp LCTRL       &kp LALT        &kp LGUI        &bt BT_CLR                       &kp F4          &kp F5           &kp F6            &none           &bt BT_SEL 1  
                 &bootloader     &none           &none           &none           &none                            &kp F7          &kp F8           &kp F9            &none           &bt BT_SEL 2
-                                &none    SPACE_ESC      BSPC_CMD        NUM_ENTER                        &kp F10         &kp F11          &kp F12           &none
+                                &none           &esc_space      BSPC_CMD        NUM_ENTER                        &kp F10         &kp F11          &kp F12           &none
                       >;
 
                       };     
