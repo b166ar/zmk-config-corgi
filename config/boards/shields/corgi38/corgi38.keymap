@@ -307,7 +307,7 @@
                 POWER_LOCK      &none           &kp C_BRI_DN    &kp C_BRI_UP    &none                            &kp N1        &kp N2          S_3              S_MINUS         S_PLUS      
                 HM_LSHIFT       HM_LCTRL        HM_LALT_VLD     HM_LCMD_VLU     &kp K_MUTE                       S_4           S_5             &kp N6           S_SLASH         S_STAR  
                 &kp CAPS        &none           &kp C_PREV      &kp C_NEXT      &kp C_PP                         &kp N7        &kp N8          &kp N9           APOSTR_QUOTE    S_EQUAL
-                                &none           &none           CONF            &none                            &kp LA(N5)    &kp N0          &kp LA(N6)     &none
+                                &none           &none           &mo CONF            &none                            &kp LA(N5)    &kp N0          &kp LA(N6)     &none
                       >;
 
                       };                 
