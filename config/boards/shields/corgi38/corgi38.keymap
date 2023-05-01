@@ -43,7 +43,7 @@
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_MOD_TAP";
     #binding-cells = <0>;
-    tapping-term-ms = <50>;
+    tapping-term-ms = <200>;
     bindings = <&kp LG(SPACE)>, <&kp LC(LA(SPACE))>;
         };
 
@@ -51,7 +51,7 @@
     compatible = "zmk,behavior-tap-dance";           
     label = "TAP_DANCE_MOD_TAP";
     #binding-cells = <0>;
-    tapping-term-ms = <50>;
+    tapping-term-ms = <100>;
     bindings = <&mt LS(LC(LA(LCMD))) ESC>, <&kp SPACE>;
         };    
 
