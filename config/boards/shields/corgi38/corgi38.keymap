@@ -47,13 +47,13 @@
     bindings = <&kp LG(SPACE)>, <&kp LC(LA(SPACE))>;
         };
 
-      //Prev Lang on tap, Alt+Opt+Space on 2 taps (Tap-Dance Behavior) 
   hyper_space: hyper_space {
     compatible = "zmk,behavior-tap-dance";
     label = "TAP_DANCE_MOD_TAP";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
-    bindings = <&hl LS(LC(LA(LCMD))) ESC>, <&kp SPACE>;
+    flavor = "hold-preferred";
+    bindings = <&mt LS(LC(LA(LCMD))) ESC>, <&kp SPACE>;
         };    
 
   //Home Mods config for the default layer  
@@ -109,7 +109,6 @@
         #define HM_K          &hm LEFT_ALT K             //SW18
         #define HM_L          &hm LEFT_CONTROL L         //SW19
         #define HM_SEMI       &hm LEFT_SHIFT SEMI        //SW20
-
 
         //Thumbs: three extra modifiers with keypresses
         #define ESC_HYPER_TD  &mt LS(LC(LA(LCMD))) ESC   //SW31 — HYPER on hold, ESC on Tap
