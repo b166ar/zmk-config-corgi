@@ -47,12 +47,12 @@
     bindings = <&kp LG(SPACE)>, <&kp LC(LA(SPACE))>;
         };
 
-  hyper_space: hyper_space {
+  esc_space: hyper_space {
     compatible = "zmk,behavior-tap-dance";           
-    label = "TAP_DANCE_MOD_TAP";
+    label = "esc_space";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
-    bindings = <&mt LS(LC(LA(LCMD))) ESC>, <&kp SPACE>;
+    bindings = <&mt SPACE ESC>, <&kp SPACE>;
         };    
 
   //Home Mods config for the default layer  
@@ -111,7 +111,7 @@
 
         //Thumbs: three extra modifiers with keypresses
         #define ESC_HYPER_TD  &mt LS(LC(LA(LCMD))) ESC   //SW31 — HYPER on hold, ESC on Tap
-        #define BSPC_CMD      &mt LCMD BSPC              //SW32 — Left CMD on hold, Backspace on Tap
+        #define SPACE_ESC     &mt SPACE ESC             //SW32 — Left CMD on hold, Backspace on Tap
         #define SPACE_SHIFT   &ssh SPACE LSHIFT          //SW33 — Left Shift on hold, Space on Tap
 
         //Thumbs: four extra layers with keypresses
@@ -127,7 +127,7 @@
                 &kp Q       &kp W           &kp E          &kp R           &kp T                     &kp Y         &kp U         &kp I          &kp O         &kp P      
                 HM_A        HM_S            HM_D           HM_F            &kp G                     &kp H         HM_J          HM_K           HM_L          HM_SEMI  
                 &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &kp COMMA      &kp DOT       &lang2
-                            ESC_HYPER_TD    &hyper_space      BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT     CONF_TAB
+                            &none    SPACE_ESC      BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT     &none
                                   >;
 
                       };
@@ -183,7 +183,7 @@
             label = "NAV";
               bindings = <
                 &none          &none           &none          &none           DRSS_E                   ZOOM_OUT      ZOOM_IN         ARROW_UP        &none            CYR_X      
-                &kp LSHFT      &kp LCTRL       &kp LALT       &kp LGUI        &none                    &none         ARROW_LEFT      ARROW_DOWN      ARROW_RIGHT      CYR_E
+                &kp LSHFT      &kp LCTRL       &kp LALT       &kp LGUI        &none                    &kp TAB       ARROW_LEFT      ARROW_DOWN      ARROW_RIGHT      CYR_E
                 &none          &none           &none          &none           &none                    &none         CYR_HS          &none           &none            &none
                                ESC_HYPER_TD    SPACE_SHIFT    BSPC_CMD        NUM_ENTER                &none         &none           &none           &none
                                   >; 
@@ -307,7 +307,7 @@
                 POWER_LOCK      &none           &kp C_BRI_DN    &kp C_BRI_UP    &none                            &kp N1        &kp N2          S_3              S_MINUS         S_PLUS      
                 HM_LSHIFT       HM_LCTRL        HM_LALT_VLD     HM_LCMD_VLU     &kp K_MUTE                       S_4           S_5             &kp N6           S_SLASH         S_STAR  
                 &kp CAPS        &none           &kp C_PREV      &kp C_NEXT      &kp C_PP                         &kp N7        &kp N8          &kp N9           APOSTR_QUOTE    S_EQUAL
-                                &none           &none           &none           &none                            &kp LA(N5)    &kp N0          &kp LA(N6)     &none
+                                &none           &none           CONF            &none                            &kp LA(N5)    &kp N0          &kp LA(N6)     &none
                       >;
 
                       };                 
