@@ -53,7 +53,18 @@
     #binding-cells = <0>;
     tapping-term-ms = <200>;
     bindings = <&kp ESC>, <&kp SPACE>;
-        };    
+        };  
+
+ esc_fq: super_esc {
+    compatible = "zmk,behavior-tap-dance";           
+    label = "TAP_DANCE_esc_space";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&kp ESC>, <&kp LC(LA(ESC))>;
+        };         
+
+        
+
 
   //Home Mods config for the default layer  
   hm: hold_tap_mods {
@@ -127,7 +138,7 @@
                 &kp Q       &kp W           &kp E          &kp R           &kp T                     &kp Y         &kp U         &kp I          &kp O         &kp P      
                 HM_A        HM_S            HM_D           HM_F            &kp G                     &kp H         HM_J          HM_K           HM_L          HM_SEMI  
                 &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &kp COMMA      &kp DOT       &lang2
-                            &none           &esc_space     BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT     &none
+                            &none           &kp SPACE     BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT     &none
                                   >;
 
                       };
@@ -257,7 +268,7 @@
         //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
 
         //ROW 1  
-        #define POWER_LOCK      &mt C_PWR LC(LG(Q))      //SW1: Lock on tap, Power on hold
+                                                         //SW1: ESC on tap
                                                          //SW2: &none
                                                          //SW3: C_BRI_DN — brightness DOWN
                                                          //SW4: C_BRI_DN — brightness UP
@@ -304,10 +315,10 @@
         numbers_layer {
             label = "NUM";
               bindings = <
-                POWER_LOCK      &none           &kp C_BRI_DN    &kp C_BRI_UP    &none                            &kp N1        &kp N2          S_3              S_MINUS         S_PLUS      
+                &esc_fq      &none           &kp C_BRI_DN    &kp C_BRI_UP    &none                            &kp N1        &kp N2          S_3              S_MINUS         S_PLUS      
                 HM_LSHIFT       HM_LCTRL        HM_LALT_VLD     HM_LCMD_VLU     &kp K_MUTE                       S_4           S_5             &kp N6           S_SLASH         S_STAR  
                 &kp CAPS        &none           &kp C_PREV      &kp C_NEXT      &kp C_PP                         &kp N7        &kp N8          &kp N9           APOSTR_QUOTE    S_EQUAL
-                                &none           &none           &mo CONF            &none                            &kp LA(N5)    &kp N0          &kp LA(N6)     &none
+                                &none           &none           &mo CONF        &none                            &kp LA(N5)    &kp N0          &kp LA(N6)     &none
                       >;
 
                       };                 
@@ -321,7 +332,7 @@
         //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
 
         //ROW 1  
-                                                         //SW1: Reset the keyboard and re-run the firmware flashed to the device, on tap
+        #define POWER_LOCK      &mt C_PWR LC(LG(Q))      //SW1: Lock on tap, Power on hold
                                                          //SW2: &none
                                                          //SW3: &none
                                                          //SW4: &none
@@ -370,7 +381,7 @@
         config_layer {
             label = "CONF";
               bindings = <
-                &sys_reset      &none           &none           &none           &none                            &kp F1          &kp F2           &kp F3            &none           &bt BT_SEL 0      
+                POWER_LOCK      &none           &none           &none           &none                            &kp F1          &kp F2           &kp F3            &none           &bt BT_SEL 0      
                 &kp LSHFT       &kp LCTRL       &kp LALT        &kp LGUI        &bt BT_CLR                       &kp F4          &kp F5           &kp F6            &none           &bt BT_SEL 1  
                 &bootloader     &none           &none           &none           &none                            &kp F7          &kp F8           &kp F9            &none           &bt BT_SEL 2
                                 &none           &none           &none           &none                            &kp F10         &kp F11          &kp F12           &none
