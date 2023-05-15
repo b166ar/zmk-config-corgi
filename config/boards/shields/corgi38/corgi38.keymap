@@ -281,8 +281,8 @@
                                                          //SW10: + on tap, ± on hold   
 
         //ROW 2
-        #define HM_LALT_VLD     &hm LSHIFT C_BRI_DN       //SW11: Left Shift on tap
-        #define HM_LALT_VLD     &hm LCTRL C_BRI_UP        //SW12: Left Ctrl on tap
+        #define LSHIFT_BRI_DN     &hm LSHIFT C_BRI_DN       //SW11: Left Shift on tap
+        #define LCTRL_BRI_UP     &hm LCTRL C_BRI_UP        //SW12: Left Ctrl on tap
         #define HM_LALT_VLD     &hm LALT C_VOL_DN        //SW13: Volume Down on tap, Left Alt on hold
         #define HM_LCMD_VLU     &hm LGUI C_VOL_UP        //SW14: Volume Up on tap, Left CMD on hold
                                                          //SW15: Mute on tap
@@ -316,7 +316,7 @@
             label = "NUM";
               bindings = <
                 &esc_fq         &none           S_3             S_4             S_5                              &kp N1        &kp N2      &kp N3           S_MINUS         S_PLUS      
-                HM_LSHIFT       HM_LCTRL        HM_LALT_VLD     HM_LCMD_VLU     &kp K_MUTE                       &kp N4        &kp N5      &kp N6           S_SLASH         S_STAR  
+                LSHIFT_BRI_DN   LCTRL_BRI_UP    HM_LALT_VLD     HM_LCMD_VLU     &kp K_MUTE                       &kp N4        &kp N5      &kp N6           S_SLASH         S_STAR  
                 &kp CAPS        &none           &kp C_PREV      &kp C_NEXT      &kp C_PP                         &kp N7        &kp N8      &kp N9           APOSTR_QUOTE    S_EQUAL
                                 &none           &none           &mo CONF        &none                            &kp LA(N5)    &kp N0      &kp LA(N6)       &none
                       >;
