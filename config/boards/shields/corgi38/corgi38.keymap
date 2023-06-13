@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 // LAYERS
-#define DEF   0
+#define MAIN  0
 #define NAV   1
 #define SYMB  2
 #define NUM   3
@@ -76,16 +76,6 @@
     bindings = <&kp>, <&kp>;
 };
 
-  //Home Mods config for the default layer  
-  ssh: space_sticky_shift {
-    compatible = "zmk,behavior-hold-tap";
-    label = "space_sticky_shift";
-    #binding-cells = <2>;
-    tapping_term_ms = <300>;
-    flavor = "tap-preferred";
-    bindings = <&kp>, <&sk>;
-};
-
   //Hold-taps for thumb claster (layer switching)
   hl: hold_tap_layers {
     compatible = "zmk,behavior-hold-tap";
@@ -123,7 +113,8 @@
         //Thumbs: three extra modifiers with keypresses
         #define ESC_HYPER_TD  &mt LS(LC(LA(LCMD))) ESC   //SW31 — HYPER on hold, ESC on Tap
         #define BSPC_CMD      &mt LCMD BSPC              //SW32 — Left CMD on hold, Backspace on Tap
-        #define SPACE_SHIFT   &ssh SPACE LSHIFT          //SW33 — Left Shift on hold, Space on Tap
+
+                                                          //SW33 — Left Shift on hold, Space on Tap
 
         //Thumbs: four extra layers with keypresses
         #define NUM_ENTER     &hl NUM   ENTER            //SW34 — Number layer on hold, ENTER on Tap
@@ -133,7 +124,7 @@
         #define CONF_TAB      &hl CONF  TAB              //SW38 — Confing layer on hold, Tab on Tap
 
         default_layer {
-            label = "DEF";
+            label = "MAIN";
               bindings = <
                 &kp Q       &kp W           &kp E          &kp R           &kp T                     &kp Y         &kp U         &kp I          &kp O         &kp P      
                 HM_A        HM_S            HM_D           HM_F            &kp G                     &kp H         HM_J          HM_K           HM_L          HM_SEMI  
@@ -196,7 +187,7 @@
                 &none          &none           &none          &none           DRSS_E                   ZOOM_OUT      ZOOM_IN         ARROW_UP        &none            CYR_X      
                 &kp LSHFT      &kp LCTRL       &kp LALT       &kp LGUI        &none                    &kp TAB       ARROW_LEFT      ARROW_DOWN      ARROW_RIGHT      CYR_E
                 &none          &none           &none          &none           &none                    &none         CYR_HS          &none           &none            &none
-                               &kp ESC           &esc_space     BSPC_CMD        NUM_ENTER                &none         &none           &none         &lang2
+                               &kp ESC         &kp SPACE     BSPC_CMD        NUM_ENTER                &none         &none           &none         &lang2
                                   >; 
 
                       };
@@ -254,7 +245,7 @@
                 S_TILDE         S_AT            S_HASH          S_DOLLAR        S_PERCENT                        S_UNDER       S_LESSTHAN      S_GREATERTHAN    S_MINUS         S_PLUS      
                 HM_LSHIFT       HM_LCTRL        HM_LALT_LPAR    HM_LCMD_RPAR    &none                            S_DASH        UKR_LPAW        UKR_RPAW         S_SLASH         S_STAR  
                 ACCENT_CARET    &none           LBRKT_LBRACE    RBRKT_RBRACE    &none                            SMCOL_COL     S_QMARK         S_EXCLAM         APOSTR_QUOTE    S_EQUAL
-                                &kp ESC           &esc_space     BSPC_CMD        NUM_ENTER                        &none         &none           &none           &lang2
+                                &kp ESC         &kp SPACE     BSPC_CMD        NUM_ENTER                        &none         &none           &none           &lang2
                                   >;
 
                       };
