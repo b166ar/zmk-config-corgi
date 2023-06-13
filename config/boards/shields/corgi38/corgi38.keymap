@@ -15,7 +15,6 @@
 
 
 / {
-
   //Caps Word Behavior, tap SW11 and SW20 at the same time
   combos {
     compatible = "zmk,combos";
@@ -26,17 +25,7 @@
         };
     };
 
-
   behaviors {
-
-  //HYPER on hold, ESC on Tap, Alt+Cmd+ESC on 4 taps (Tap-Dance Behavior) 
-  esc_hyper_fquit: tap_dance_mod_tap {
-    compatible = "zmk,behavior-tap-dance";
-    label = "TAP_DANCE_MOD_TAP";
-    #binding-cells = <0>;
-    tapping-term-ms = <300>;
-    bindings = <&mt LS(LC(LA(LCMD))) ESC>, <&none>, <&none>, <&kp LA(LG(ESC))>;
-        };
 
   //Prev Lang on tap, Alt+Opt+Space on 2 taps (Tap-Dance Behavior) 
   lang2: lang_lang {
@@ -45,26 +34,7 @@
     #binding-cells = <0>;
     tapping-term-ms = <200>;
     bindings = <&kp LG(SPACE)>, <&kp LC(LA(SPACE))>;
-        };
-
-  esc_space: hyper_space {
-    compatible = "zmk,behavior-tap-dance";           
-    label = "TAP_DANCE_esc_space";
-    #binding-cells = <0>;
-    tapping-term-ms = <200>;
-    bindings = <&kp ESC>, <&kp SPACE>;
-        };  
-
- esc_fq: super_esc {
-    compatible = "zmk,behavior-tap-dance";           
-    label = "TAP_DANCE_esc_space";
-    #binding-cells = <0>;
-    tapping-term-ms = <200>;
-    bindings = <&kp ESC>, <&kp LC(LA(ESC))>;
-        };         
-
-        
-
+        };      
 
   //Home Mods config for the default layer  
   hm: hold_tap_mods {
@@ -129,7 +99,7 @@
                 &kp Q       &kp W           &kp E          &kp R           &kp T                     &kp Y         &kp U         &kp I          &kp O         &kp P      
                 HM_A        HM_S            HM_D           HM_F            &kp G                     &kp H         HM_J          HM_K           HM_L          HM_SEMI  
                 &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &kp COMMA      &kp DOT       &lang2
-                            &kp ESC         &kp SPACE     BSPC_CMD         NUM_ENTER                   NAV_COMMA     SYMB_SPACE   MY_DOT     &kp F24
+                            &kp ESC         &kp SPACE      BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT         &kp F24
                                   >;
 
                       };
