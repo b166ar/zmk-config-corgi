@@ -28,15 +28,15 @@
   behaviors {
 
   //Prev Lang on tap, Alt+Opt+Space on 2 taps (Tap-Dance Behavior) 
-  lang2: lang_lang {
+  lang: lang_lang {
     compatible = "zmk,behavior-tap-dance";
-    label = "lang2";
+    label = "lang";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
     bindings = <&kp LG(SPACE)>, <&kp LC(LA(SPACE))>;
         };      
 
-  //Home Mods config for the default layer  
+  //Home Mods config for the MAIN layer  
   hm: hold_tap_mods {
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_MODS";
@@ -46,7 +46,7 @@
     bindings = <&kp>, <&kp>;
 };
 
-  //Hold-taps for thumb claster (layer switching)
+  //Hold-taps config for thumb claster (layer switching)
   hl: hold_tap_layers {
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_LAYERS";
@@ -98,8 +98,8 @@
               bindings = <
                 &kp Q       &kp W           &kp E          &kp R           &kp T                     &kp Y         &kp U         &kp I          &kp O         &kp P      
                 HM_A        HM_S            HM_D           HM_F            &kp G                     &kp H         HM_J          HM_K           HM_L          HM_SEMI  
-                &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &kp COMMA      &kp DOT       &lang2
-                            &kp ESC         &kp SPACE      BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT         &kp F24
+                &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &kp COMMA      &kp DOT       &lang
+                            &kp ESC         &kp SPACE      BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT         &kp F13
                                   >;
 
                       };
@@ -157,7 +157,7 @@
                 &none          &none           &none          &none           DRSS_E                   ZOOM_OUT      ZOOM_IN         ARROW_UP        &none            CYR_X      
                 &kp LSHFT      &kp LCTRL       &kp LALT       &kp LGUI        &none                    &kp TAB       ARROW_LEFT      ARROW_DOWN      ARROW_RIGHT      CYR_E
                 &none          &none           &none          &none           &none                    &none         CYR_HS          &none           &none            &none
-                               &kp ESC         &kp SPACE      BSPC_CMD        NUM_ENTER                &none         &none           &none           &lang2
+                               &kp ESC         &kp SPACE      BSPC_CMD        NUM_ENTER                &none         &none           &none           &kp F13
                                   >; 
 
                       };
@@ -215,7 +215,7 @@
                 S_TILDE         S_AT            S_HASH          S_DOLLAR        S_PERCENT                        S_UNDER       S_LESSTHAN      S_GREATERTHAN    S_MINUS         S_PLUS      
                 HM_LSHIFT       HM_LCTRL        HM_LALT_LPAR    HM_LCMD_RPAR    &none                            S_DASH        UKR_LPAW        UKR_RPAW         S_SLASH         S_STAR  
                 ACCENT_CARET    &none           LBRKT_LBRACE    RBRKT_RBRACE    &none                            SMCOL_COL     S_QMARK         S_EXCLAM         APOSTR_QUOTE    S_EQUAL
-                                &kp ESC         &kp SPACE       BSPC_CMD        NUM_ENTER                        &none         &none           &none            &lang2
+                                &kp ESC         &kp SPACE       BSPC_CMD        NUM_ENTER                        &none         &none           &none            &kp F13
                                   >;
 
                       };
@@ -237,22 +237,22 @@
 
                                                          //SW6: 1 on tap
                                                          //SW7: 2 on tap
-        #define S_3             &kp LS(LG(N3))        //SW8: 3 on tap, Shift+Cmd+3 on hold (screenshot)
+        #define S_3             &kp LS(LG(N3))           //SW8: 3 on tap, Shift+Cmd+3 on hold (screenshot)
                                                          //SW9: - on tap, − on hold
                                                          //SW10: + on tap, ± on hold   
 
         //ROW 2
-        #define LSHIFT_BRI_DN   &hm LSHIFT C_BRI_DN       //SW11: Left Shift on tap
-        #define LCTRL_BRI_UP    &hm LCTRL C_BRI_UP        //SW12: Left Ctrl on tap
+        #define LSHIFT_BRI_DN   &hm LSHIFT C_BRI_DN      //SW11: Left Shift on tap
+        #define LCTRL_BRI_UP    &hm LCTRL C_BRI_UP       //SW12: Left Ctrl on tap
         #define HM_LALT_VLD     &hm LALT C_VOL_DN        //SW13: Volume Down on tap, Left Alt on hold
         #define HM_LCMD_VLU     &hm LGUI C_VOL_UP        //SW14: Volume Up on tap, Left CMD on hold
                                                          //SW15: Mute on tap
 
-        #define S_4             &kp LS(LG(N4))         //SW16: 4 on tap
-        #define S_5             &kp LS(LG(N5))         //SW17: 5 on tapp
-                                                          //SW18: 6 on tap
-                                                          //SW19: / on tap, \ on hold
-                                                          //SW20: * on tap, × on hold
+        #define S_4             &kp LS(LG(N4))           //SW16: 4 on tap
+        #define S_5             &kp LS(LG(N5))           //SW17: 5 on tapp
+                                                         //SW18: 6 on tap
+                                                         //SW19: / on tap, \ on hold
+                                                         //SW20: * on tap, × on hold
 
         //ROW 3
                                                          //SW21: CapsLock on tap
@@ -279,7 +279,7 @@
                 &kp ESC          &kp LS(LG(M))   S_3             S_4             S_5                              &kp N1        &kp N2      &kp N3           S_MINUS         S_PLUS      
                 LSHIFT_BRI_DN    LCTRL_BRI_UP    HM_LALT_VLD     HM_LCMD_VLU     &kp K_MUTE                       &kp N4        &kp N5      &kp N6           S_SLASH         S_STAR  
                 &kp CAPS         &none           &kp C_PREV      &kp C_NEXT      &kp C_PP                         &kp N7        &kp N8      &kp N9           APOSTR_QUOTE    S_EQUAL
-                                 &kp ESC         &none           &mo CONF        &none                            &kp LA(N5)    &kp N0      &kp LA(N6)       &lang2
+                                 &kp ESC         &none           &mo CONF        &none                            &kp LA(N5)    &kp N0      &kp LA(N6)       &kp F13
                       >;
 
                       };                 
@@ -345,7 +345,7 @@
                 POWER_LOCK      &none           &none           &none           &none                            &kp F1          &kp F2           &kp F3            &none           &bt BT_SEL 0      
                 &kp LSHFT       &kp LCTRL       &kp LALT        &kp LGUI        &bt BT_CLR                       &kp F4          &kp F5           &kp F6            &none           &bt BT_SEL 1  
                 &bootloader     &none           &none           &none           &none                            &kp F7          &kp F8           &kp F9            &none           &bt BT_SEL 2
-                                &kp ESC         &none           &none           &none                            &kp F10         &kp F11          &kp F12           &lang2
+                                &kp ESC         &none           &none           &none                            &kp F10         &kp F11          &kp F12           &kp F13
                       >;
 
                       };     
