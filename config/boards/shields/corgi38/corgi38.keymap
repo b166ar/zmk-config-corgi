@@ -66,9 +66,9 @@
         // | SW21 | SW22 | SW23 | SW24 | SW25 |         | SW26 | SW27 | SW28 | SW29 | SW30 |
         //        | SW31 | SW32 | SW33 | SW34 |         | SW35 | SW36 | SW37 | SW38 |
 
-        //DEF Layer
+        //MAIN Layer
 
-        //Home Mods for the LEFT half
+        //Home Mods and letters for the LEFT half
         #define HM_A          &hm LEFT_SHIFT A           //SW11
         #define HM_S          &hm LEFT_CONTROL S         //SW12
         #define HM_D          &hm LEFT_ALT D             //SW13
@@ -79,20 +79,20 @@
         #define HM_K          &hm LEFT_ALT K             //SW18
         #define HM_L          &hm LEFT_CONTROL L         //SW19
         #define HM_SEMI       &hm LEFT_SHIFT SEMI        //SW20
-                                                         //SW30 — &lang — macOS lang behavior
+                                                         //SW30: &lang (macOS lang behavior)
 
 
         //Left Thumbs
-                                                         //SW31 — ESC on Tap
-                                                         //SW32 — Space on Tap
-        #define BSPC_CMD      &mt LCMD BSPC              //SW33 — CMD on hold, Backspace on Tap
-        #define NUM_ENTER     &hl NUM   ENTER            //SW34 — NUMB layer on hold, ENTER on Tap
+                                                         //SW31: ESC on Tap
+                                                         //SW32: Space on Tap
+        #define BSPC_CMD      &mt LCMD BSPC              //SW33: CMD on hold, Backspace on Tap
+        #define NUM_ENTER     &hl NUM   ENTER            //SW34: NUMB layer on hold, ENTER on Tap
 
         //Right Thumbs
-        #define NAV_COMMA     &hl NAV   LA(N5)           //SW35 — NAV layer onf hold, COMMA on Tap
-        #define SYMB_SPACE    &hl SYMB  SPACE            //SW36 — Symbol layer on hold, Space on Tap
-        #define MY_DOT        &kp LA(N6)                 //SW37 — Custom DOT on tap
-                                                         //SW38 — &none
+        #define NAV_COMMA     &hl NAV   LA(N5)           //SW35: NAV layer onf hold, COMMA on Tap
+        #define SYMB_SPACE    &hl SYMB  SPACE            //SW36: Symbol layer on hold, Space on Tap
+        #define MY_DOT        &kp LA(N6)                 //SW37: Custom DOT on tap
+                                                         //SW38: &none
 
         default_layer {
             label = "MAIN";
@@ -104,7 +104,6 @@
                                   >;
 
                       };
-
 
         //Nav layer
         // | SW1  | SW2  | SW3  | SW4  | SW5  |         | SW6  | SW7  | SW8  | SW9  | SW10 |
@@ -153,16 +152,16 @@
                                                           //SW30: &none
 
         //Left Thumbs
-                                                         //SW31 — ESC on Tap
-                                                         //SW32 — Space on Tap
-                                                         //SW33 — CMD on hold, Backspace on Tap
-                                                         //SW34 — NUMB layer on hold, ENTER on Tap
+                                                         //SW31: ESC on Tap
+                                                         //SW32: Space on Tap
+                                                         //SW33: CMD on hold, Backspace on Tap
+                                                         //SW34: NUMB layer on hold, ENTER on Tap
 
         //Right Thumbs
-                                                         //SW35 — &none
-                                                         //SW36 — &none
-                                                         //SW37 — &none
-                                                         //SW38 — &none
+                                                         //SW35: &none
+                                                         //SW36: &none
+                                                         //SW37: &none
+                                                         //SW38: &none
 
         navigation_layer {
             label = "NAV";
@@ -223,16 +222,16 @@
         #define S_EQUAL         &mt LA(EQUAL) EQUAL      //SW30: = on tap, ≠ on hold
 
         //Left Thumbs
-                                                         //SW31 — ESC on Tap
-                                                         //SW32 — Space on Tap
-                                                         //SW33 — CMD on hold, Backspace on Tap
-                                                         //SW34 — NUMB layer on hold, ENTER on Tap
+                                                         //SW31: ESC on Tap
+                                                         //SW32: Space on Tap
+                                                         //SW33: CMD on hold, Backspace on Tap
+                                                         //SW34: NUMB layer on hold, ENTER on Tap
 
         //Right Thumbs
-                                                         //SW35 — &none
-                                                         //SW36 — &none
-                                                         //SW37 — &none
-                                                         //SW38 — &none
+                                                         //SW35: &none
+                                                         //SW36: &none
+                                                         //SW37: &none
+                                                         //SW38: &none
 
 
 
@@ -258,8 +257,8 @@
         //ROW 1  
                                                          //SW1: ESC on tap
                                                          //SW2: &none
-        #define S_3             &kp LS(LG(N3))           //SW3: Shift+Cmd+3 on tap (screenshot)   C_BRI_DN — brightness DOWN
-        #define S_4             &kp LS(LG(N4))           //SW4: Shift+Cmd+4 on tap (screenshot) C_BRI_DN — brightness UP
+        #define S_3             &kp LS(LG(N3))           //SW3: Shift+Cmd+3 on tap (screenshot)   C_BRI_DN: brightness DOWN
+        #define S_4             &kp LS(LG(N4))           //SW4: Shift+Cmd+4 on tap (screenshot) C_BRI_DN: brightness UP
         #define S_5             &kp LS(LG(N5))           //SW5: Shift+Cmd+5 on tap (screenshot)
 
                                                          //SW6: 1 on tap
@@ -295,10 +294,10 @@
                                                          //SW30: = on tap, ≠ on hold
 
         //Left Thumbs
-                                                         //SW31 — ESC on Tap
-                                                         //SW32 — &none
-                                                         //SW33 — CONF layer
-                                                         //SW34 — &none
+                                                         //SW31: ESC on Tap
+                                                         //SW32: &none
+                                                         //SW33: CONF layer
+                                                         //SW34: &none
         //Right Thumb
                                                          //SW35: Comma on tap 
                                                          //SW36: 0 on tap
@@ -351,7 +350,7 @@
                                                          //SW20: Select the 2st (1) bt-rofile, on tap
 
         //ROW 3
-                                                         //SW21: Reset the keyboard and put it into bootloader mode, on tap
+                                                         //SW21: &none
                                                          //SW22: &none
                                                          //SW23: &none
                                                          //SW24: &none
@@ -363,6 +362,11 @@
                                                          //SW29: &none
                                                          //SW30: Select the 3st (2) bt-rofile, on tap
 
+        //Left Thumbs
+                                                         //SW31: &none
+                                                         //SW32: &none
+                                                         //SW33: &none
+                                                         //SW34: &none
         //Right Thumb
                                                          //SW35: F10 on tap 
                                                          //SW36: F11 on tap 
@@ -376,8 +380,8 @@
               bindings = <
                 POWER_LOCK      &none           &none           &none           &none                            &kp F1          &kp F2           &kp F3            &none           &bt BT_SEL 0      
                 &kp LSHFT       &kp LCTRL       &kp LALT        &kp LGUI        &bt BT_CLR                       &kp F4          &kp F5           &kp F6            &none           &bt BT_SEL 1  
-                &bootloader     &none           &none           &none           &none                            &kp F7          &kp F8           &kp F9            &none           &bt BT_SEL 2
-                                &kp ESC         &none           &none           &none                            &kp F10         &kp F11          &kp F12           &none
+                &none           &none           &none           &none           &none                            &kp F7          &kp F8           &kp F9            &none           &bt BT_SEL 2
+                                &none           &none           &none           &none                            &kp F10         &kp F11          &kp F12           &none
                       >;
 
                       };     
