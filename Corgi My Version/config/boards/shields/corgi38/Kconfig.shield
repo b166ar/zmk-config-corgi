@@ -1,2 +1,0 @@
-config SHIELD_CORGI38
-    def_bool $(shields_list_contains,corgi38)

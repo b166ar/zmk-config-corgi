@@ -1,6 +1,0 @@
-if SHIELD_CORGI38
-
-config ZMK_KEYBOARD_NAME
-    default "corgi38"
-
-endif
