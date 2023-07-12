@@ -132,7 +132,7 @@
                                                           //SW14: LGUI on tap
                                                           //SW15: &none 
  
-                                                          //SW16: &none 
+                                                          //SW16: TAB on Tap 
         #define ARROW_LEFT     &kp LEFT                   //SW17: arrow left
         #define ARROW_DOWN     &kp DOWN                   //SW18: arrow down
         #define ARROW_RIGHT    &kp RIGHT                  //SW19: arrow right
@@ -151,6 +151,18 @@
                                                           //SW28: &none                                                      
                                                           //SW29: &none
                                                           //SW30: &none
+
+        //Left Thumbs
+                                                         //SW31 — ESC on Tap
+                                                         //SW32 — Space on Tap
+                                                         //SW33 — CMD on hold, Backspace on Tap
+                                                         //SW34 — NUMB layer on hold, ENTER on Tap
+
+        //Right Thumbs
+                                                         //SW35 — &none
+                                                         //SW36 — &none
+                                                         //SW37 — &none
+                                                         //SW38 — &none
 
         navigation_layer {
             label = "NAV";
@@ -209,7 +221,21 @@
         #define S_EXCLAM        &mt LA(D) LS(N1)         //SW28: ! on tap, ¡ on hold
         #define APOSTR_QUOTE    &mt LA(N1) LA(R)         //SW29: ' on tap, " on hold
         #define S_EQUAL         &mt LA(EQUAL) EQUAL      //SW30: = on tap, ≠ on hold
- 
+
+        //Left Thumbs
+                                                         //SW31 — ESC on Tap
+                                                         //SW32 — Space on Tap
+                                                         //SW33 — CMD on hold, Backspace on Tap
+                                                         //SW34 — NUMB layer on hold, ENTER on Tap
+
+        //Right Thumbs
+                                                         //SW35 — &none
+                                                         //SW36 — &none
+                                                         //SW37 — &none
+                                                         //SW38 — &none
+
+
+
         symbols_layer {
             label = "SYMB";
               bindings = <
@@ -232,25 +258,25 @@
         //ROW 1  
                                                          //SW1: ESC on tap
                                                          //SW2: &none
-                                                         //SW3: C_BRI_DN — brightness DOWN
-                                                         //SW4: C_BRI_DN — brightness UP
-                                                         //SW2: &none
+        #define S_3             &kp LS(LG(N3))           //SW3: Shift+Cmd+3 on tap (screenshot)   C_BRI_DN — brightness DOWN
+        #define S_4             &kp LS(LG(N4))           //SW4: Shift+Cmd+4 on tap (screenshot) C_BRI_DN — brightness UP
+        #define S_5             &kp LS(LG(N5))           //SW5: Shift+Cmd+5 on tap (screenshot)
 
                                                          //SW6: 1 on tap
                                                          //SW7: 2 on tap
-        #define S_3             &kp LS(LG(N3))           //SW8: 3 on tap, Shift+Cmd+3 on hold (screenshot)
+                                                         //SW8: 3 on tap
                                                          //SW9: - on tap, − on hold
                                                          //SW10: + on tap, ± on hold   
 
         //ROW 2
-        #define LSHIFT_BRI_DN   &hm LSHIFT C_BRI_DN      //SW11: Left Shift on tap
-        #define LCTRL_BRI_UP    &hm LCTRL C_BRI_UP       //SW12: Left Ctrl on tap
+        #define LSHIFT_BRI_DN   &hm LSHIFT C_BRI_DN      //SW11: brightness DOWN, Left Shoft on hold
+        #define LCTRL_BRI_UP    &hm LCTRL C_BRI_UP       //SW12: brightness UP, Left Ctrl on hold
         #define HM_LALT_VLD     &hm LALT C_VOL_DN        //SW13: Volume Down on tap, Left Alt on hold
         #define HM_LCMD_VLU     &hm LGUI C_VOL_UP        //SW14: Volume Up on tap, Left CMD on hold
                                                          //SW15: Mute on tap
 
-        #define S_4             &kp LS(LG(N4))           //SW16: 4 on tap
-        #define S_5             &kp LS(LG(N5))           //SW17: 5 on tapp
+                                                         //SW16: 4 on tap
+                                                         //SW17: 5 on tap
                                                          //SW18: 6 on tap
                                                          //SW19: / on tap, \ on hold
                                                          //SW20: * on tap, × on hold
@@ -268,10 +294,15 @@
                                                          //SW29: ' on tap, " on hold
                                                          //SW30: = on tap, ≠ on hold
 
+        //Left Thumbs
+                                                         //SW31 — ESC on Tap
+                                                         //SW32 — &none
+                                                         //SW33 — CONF layer
+                                                         //SW34 — &none
         //Right Thumb
-                                                         //SW35: 0 on tap 
-                                                         //SW36: DOT on tap
-                                                         //SW37: Comma on tap
+                                                         //SW35: Comma on tap 
+                                                         //SW36: 0 on tap
+                                                         //SW37: DOT on tap
                                                          //SW38: &none
 
         numbers_layer {
