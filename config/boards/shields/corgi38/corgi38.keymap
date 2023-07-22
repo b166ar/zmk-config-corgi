@@ -29,7 +29,7 @@
     //Change imput language, tap SW34 and SW35 at the same time
     combo_lang {
     timeout-ms = <100>;
-    key-positions = <33 34>;
+    key-positions = <35 36>;
     bindings = <&lang>;
               };
     };
