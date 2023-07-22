@@ -34,7 +34,6 @@
               };
     };
 
-
   behaviors {
 
   //macOS imput language shortcut: CMD+Space on Tap, Alt+Opt+Space on 2 taps (Tap-Dance Behavior) 
