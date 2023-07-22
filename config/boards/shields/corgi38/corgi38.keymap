@@ -27,16 +27,6 @@
         };
     };
 
-  //Change imput language, tap SW34 and SW35 at the same time
-  combos {
-    compatible = "zmk,combos";
-    combo_capslock {
-    timeout-ms = <100>;
-    key-positions = <34 35>;
-    bindings = <&lang>;
-        };
-    };
-
   behaviors {
 
   //macOS imput language shortcut: CMD+Space on Tap, Alt+Opt+Space on 2 taps (Tap-Dance Behavior) 
