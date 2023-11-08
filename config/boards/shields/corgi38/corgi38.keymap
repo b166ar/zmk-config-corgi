@@ -109,7 +109,7 @@
                 &kp Q       &kp W           &kp E          &kp R           &kp T                     &kp Y         &kp U         &kp I          &kp O         &kp P      
                 HM_A        HM_S            HM_D           HM_F            &kp G                     &kp H         HM_J          HM_K           HM_L          HM_SEMI  
                 &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &kp COMMA      &kp DOT       &lang
-                            &kp ESC         &kp SPACE      BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT         &none
+                            &kp ESC         &kp SPACE      BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT         &kp F13
                                   >;
 
                       };
@@ -224,7 +224,7 @@
         #define RBRKT_RBRACE    &mt LA(B) LA(RBKT)       //SW24: ] on tap, } on hold
                                                          //SW25: &none
 
-        #define SMCOL_COL       &mt LA(S) LA(Y)          //SW26: ; on tap, : on hold
+        #define SMCOL_COL       &mt LA(Y) LA(S)          //SW26: : on tap, ; on hold
         #define S_QMARK         &mt LA(F) LA(N9)         //SW27: ? on tap, ¿ on hold 
         #define S_EXCLAM        &mt LA(D) LS(N1)         //SW28: ! on tap, ¡ on hold
         #define APOSTR_QUOTE    &mt LA(N1) LA(R)         //SW29: ' on tap, " on hold
