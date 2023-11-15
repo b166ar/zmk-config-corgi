@@ -70,7 +70,8 @@
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_LAYERS";
     #binding-cells = <2>;
-    tapping_term_ms = <200>;
+    tapping_term_ms = <100>;
+    quick-tap-ms = <100>;
     flavor = "hold-preferred";
     bindings = <&mo>, <&kp>;
 };
