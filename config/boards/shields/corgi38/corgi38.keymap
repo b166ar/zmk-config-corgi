@@ -56,7 +56,7 @@
 };
 
   //Home Mods config for the MAIN layer  
-  shft: hold_tap_shift {
+  tp: hold_tap_shift {
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_MODS";
     #binding-cells = <2>;
@@ -88,7 +88,7 @@
         //MAIN Layer
 
         //Home Mods and letters for the LEFT half
-        #define HM_A          &shft LEFT_SHIFT A           //SW11
+        #define HM_A          &tp LEFT_SHIFT A           //SW11
         #define HM_S          &hm LEFT_CONTROL S         //SW12
         #define HM_D          &hm LEFT_ALT D             //SW13
         #define HM_F          &hm LCMD F                 //SW14
@@ -97,7 +97,7 @@
         #define HM_J          &hm LCMD J                 //SW17
         #define HM_K          &hm LEFT_ALT K             //SW18
         #define HM_L          &hm LEFT_CONTROL L         //SW19
-        #define HM_SEMI       &shft LEFT_SHIFT SEMI        //SW20
+        #define HM_SEMI       &tp LEFT_SHIFT SEMI        //SW20
                                                          //SW30: &lang (macOS lang behavior)
 
 
@@ -109,7 +109,7 @@
 
         //Right Thumbs
         #define NAV_COMMA     &hl NAV   LA(N5)           //SW35: NAV layer onf hold, COMMA on Tap
-        #define SYMB_SPACE    &hl SYMB  SPACE            //SW36: Symbol layer on hold, Space on Tap
+        #define SYMB_SPACE    &tp SYMB  SPACE            //SW36: Symbol layer on hold, Space on Tap
         #define MY_DOT        &kp LA(N6)                 //SW37: Custom DOT on tap
                                                          //F14 on Tap
 
