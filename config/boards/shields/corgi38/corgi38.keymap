@@ -12,8 +12,8 @@
 #define CONF  4
 
 &mt {
-    tapping-term-ms = <200>;
-    quick-tap-ms = <200>;
+    tapping-term-ms = <300>;
+    quick-tap-ms = <300>;
 };
 
 / {
@@ -52,6 +52,8 @@
     label = "HOLD_TAP_MODS";
     #binding-cells = <2>;
     tapping_term_ms = <200>;
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <125>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 };
@@ -71,9 +73,7 @@
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_LAYERS";
     #binding-cells = <2>;
-    tapping-term-ms = <200>;
-    quick-tap-ms = <200>;
-    require-prior-idle-ms = <125>;
+    tapping-term-ms = <100>;
     flavor = "hold-preferred";
     bindings = <&mo>, <&kp>;
 };
