@@ -12,7 +12,7 @@
 #define CONF  4
 
 &mt {
-    tapping-term-ms = <300>;
+    tapping-term-ms = <200>;
     quick-tap-ms = <300>;
 };
 
@@ -51,9 +51,9 @@
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_MODS";
       #binding-cells = <2>;
-      tapping-term-ms = <150>;
-      quick-tap-ms = <150>;
-      flavor = "tap-preferred";
+           tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
       bindings = <&kp>, <&kp>;
 };
 
