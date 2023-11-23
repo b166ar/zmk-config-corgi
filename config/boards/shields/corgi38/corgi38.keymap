@@ -98,7 +98,7 @@
         //MAIN Layer
 
         //Home Mods and letters for the LEFT half
-        #define HM_A          &hm LEFT_SHIFT A           //SW11
+        #define HM_A          &sh LEFT_SHIFT A           //SW11
         #define HM_S          &hm LEFT_CONTROL S         //SW12
         #define HM_D          &hm LEFT_ALT D             //SW13
         #define HM_F          &hm LCMD F                 //SW14
@@ -107,15 +107,15 @@
         #define HM_J          &hm LCMD J                 //SW17
         #define HM_K          &hm LEFT_ALT K             //SW18
         #define HM_L          &hm LEFT_CONTROL L         //SW19
-        #define HM_SEMI       &hm LEFT_SHIFT SEMI        //SW20
+        #define HM_SEMI       &sh LEFT_SHIFT SEMI        //SW20
                                                          //SW30: &lang (macOS lang behavior)
 
 
         //Left Thumbs
         #define SPECE_SHIFT   &hl SPACE  SHIFT           //SW31: ESC on Tap
                                                          //SW32: Space on Tap
-        #define BSPC_CMD      &mt LCMD   BSPC            //SW33: CMD on hold, Backspace on Tap
-        #define NUM_ENTER     &hl NUM    ENTER           //SW34: NUMB layer on hold, ENTER on Tap
+        #define BSPC_CMD      &mt LCMD BSPC              //SW33: CMD on hold, Backspace on Tap
+        #define NUM_ENTER     &hl NUM   ENTER            //SW34: NUMB layer on hold, ENTER on Tap
 
         //Right Thumbs
         #define NAV_COMMA     &hl NAV   LA(N5)           //SW35: NAV layer onf hold, COMMA on Tap
@@ -129,7 +129,7 @@
                 &kp Q       &kp W           &kp E          &kp R           &kp T                     &kp Y         &kp U         &kp I          &kp O         &kp P      
                 HM_A        HM_S            HM_D           HM_F            &kp G                     &kp H         HM_J          HM_K           HM_L          HM_SEMI  
                 &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &kp COMMA      &kp DOT       &lang
-                            &kp SHIFT       SPECE_SHIFT      BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT         &kp SHIFT
+                            &kp SHIFT         SPECE_SHIFT      BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT         &kp SHIFT
                                   >;
 
                       };
