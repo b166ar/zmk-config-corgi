@@ -98,7 +98,7 @@
         //MAIN Layer
 
         //Home Mods and letters for the LEFT half
-        #define HM_A          &hm LEFT_SHIFT A           //SW11
+        #define HM_A          &hm LEFT_SHIFT A           //SW11 
         #define HM_S          &hm LEFT_CONTROL S         //SW12
         #define HM_D          &hm LEFT_ALT D             //SW13
         #define HM_F          &hm LCMD F                 //SW14
