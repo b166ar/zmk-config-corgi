@@ -98,7 +98,7 @@
         //MAIN Layer
 
         //Home Mods and letters for the LEFT half
-        #define HM_A          &sh LEFT_SHIFT A           //SW11
+        #define HM_A          &hm LEFT_SHIFT A           //SW11
         #define HM_S          &hm LEFT_CONTROL S         //SW12
         #define HM_D          &hm LEFT_ALT D             //SW13
         #define HM_F          &hm LCMD F                 //SW14
@@ -107,7 +107,7 @@
         #define HM_J          &hm LCMD J                 //SW17
         #define HM_K          &hm LEFT_ALT K             //SW18
         #define HM_L          &hm LEFT_CONTROL L         //SW19
-        #define HM_SEMI       &sh LEFT_SHIFT SEMI        //SW20
+        #define HM_SEMI       &hm LEFT_SHIFT SEMI        //SW20
                                                          //SW30: &lang (macOS lang behavior)
 
 
