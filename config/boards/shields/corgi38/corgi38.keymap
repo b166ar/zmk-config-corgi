@@ -203,7 +203,7 @@
               bindings = <
                 &none          &none           &none          &none           DRSS_E                   ZOOM_OUT      ZOOM_IN         ARROW_UP        &none            CYR_X      
                 &kp LSHFT      &kp LCTRL       &kp LALT       &kp LGUI        &none                    &kp TAB       ARROW_LEFT      ARROW_DOWN      ARROW_RIGHT      CYR_E
-                &kp T      &none           &none          &none           &none                    &none         CYR_HS          &none           &none            &none
+                &kp F16        &none           &none          &none           &none                    &none         CYR_HS          &none           &none            &none
                                &kp ESC         &kp SPACE      BSPC_CMD        NUM_ENTER                &none         &none           &none           &none
                                   >; 
 
@@ -344,7 +344,7 @@
               bindings = <
                 &kp ESC          &kp LS(LG(M))   S_3             S_4             S_5                              &kp N1        &kp N2      &kp N3           S_MINUS         S_PLUS      
                 LSHIFT_BRI_DN    LCTRL_BRI_UP    HM_LALT_VLD     HM_LCMD_VLU     &kp K_MUTE                       &kp N4        &kp N5      &kp N6           S_SLASH         S_STAR  
-                &kp T         &none           &kp C_PREV      &kp C_NEXT      &kp C_PP                         &kp N7        &kp N8      &kp N9           APOSTR_QUOTE    S_EQUAL
+                &kp F16          &none           &kp C_PREV      &kp C_NEXT      &kp C_PP                         &kp N7        &kp N8      &kp N9           APOSTR_QUOTE    S_EQUAL
                                  &kp ESC         &none           &mo CONF        &none                            &kp LA(N5)    &kp N0      &kp LA(N6)       &none
                       >;
 
