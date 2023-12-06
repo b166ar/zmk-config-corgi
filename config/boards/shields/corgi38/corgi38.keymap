@@ -36,7 +36,12 @@
     bindings = <&kp TAB>;
         };
 
-
+    //word delete Behavior, 
+    combo_word_delete {
+    timeout-ms = <150>;
+    key-positions = <31 32>;
+    bindings = <WDL>;
+        };
 
     //combo_capslock {
     //timeout-ms = <150>;
