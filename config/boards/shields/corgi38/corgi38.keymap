@@ -11,6 +11,9 @@
 #define NUM   3
 #define CONF  4
 
+#define WDL   &kp LG(BSPC)           //delete a word
+
+
 &mt {
     tapping-term-ms = <200>;
 };
@@ -32,6 +35,8 @@
     key-positions = <34 35>;
     bindings = <&kp TAB>;
         };
+
+
 
     //combo_capslock {
     //timeout-ms = <150>;
@@ -144,7 +149,7 @@
                 &kp Q       &kp W           &kp E          &kp R           &kp T                     &kp Y         &kp U         &kp I          &kp O         &kp P      
                 HM_A        HM_S            HM_D           HM_F            &kp G                     &kp H         HM_J          HM_K           HM_L          HM_SEMI  
                 &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &kp COMMA      &kp DOT       &caps_word
-                            &none         &none      BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT         &none
+                            &none         &none            BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT         &none
                                   >;
 
                       };
