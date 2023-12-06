@@ -22,14 +22,14 @@
     //Caps Word Behavior, tap SW11 and SW20 at the same time
     combo_space {
     timeout-ms = <150>;
-    key-positions = <31 32>;
+    key-positions = <32 33>;
     bindings = <&kp SPACE>;
         };
 
     //Tab Behavior, tap SW36 and SW37 at the same time
     combo_tab {
     timeout-ms = <150>;
-    key-positions = <35 36>;
+    key-positions = <34 35>;
     bindings = <&kp TAB>;
         };
 
