@@ -11,7 +11,7 @@
 #define NUM   3
 #define CONF  4
 
-#define WDL   &kp LG(BSPC)           //delete a word
+#define WDL   &kp LEFT_ALT(BSPC)           //delete a word
 
 
 &mt {
