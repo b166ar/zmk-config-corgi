@@ -26,6 +26,13 @@
     bindings = <&kp SPACE>;
         };
 
+    //Tab Behavior, tap SW36 and SW37 at the same time
+    combo_space {
+    timeout-ms = <150>;
+    key-positions = <35 36>;
+    bindings = <&kp TAB>;
+        };
+
     //combo_capslock {
     //timeout-ms = <150>;
     //key-positions = <10 19>;
