@@ -26,11 +26,11 @@
     bindings = <&kp SPACE>;
         };
 
-            combo_capslock {
-    timeout-ms = <150>;
-    key-positions = <10 19>;
-    bindings = <&caps_word>;
-        };
+    //combo_capslock {
+    //timeout-ms = <150>;
+    //key-positions = <10 19>;
+    //bindings = <&caps_word>;
+       // };
 
     //Change imput language, tap SW34 and SW35 at the same time
     combo_lang {
@@ -134,7 +134,7 @@
               bindings = <
                 &kp Q       &kp W           &kp E          &kp R           &kp T                     &kp Y         &kp U         &kp I          &kp O         &kp P      
                 HM_A        HM_S            HM_D           HM_F            &kp G                     &kp H         HM_J          HM_K           HM_L          HM_SEMI  
-                &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &kp COMMA      &kp DOT       &lang
+                &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &kp COMMA      &kp DOT       &caps_word
                             &kp LEFT_SHIFT         SPECE_SHIFT      BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT         &kp RIGHT_SHIFT
                                   >;
 
