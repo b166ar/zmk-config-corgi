@@ -73,7 +73,7 @@
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_MODS";
     #binding-cells = <2>;
-    tapping_term_ms = <200>;
+    tapping_term_ms = <180>;
     require-prior-idle-ms = <125>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
@@ -94,7 +94,7 @@
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_LAYERS";
     #binding-cells = <2>;
-    tapping_term_ms = <200>;
+    tapping_term_ms = <180>;
     flavor = "hold-preferred";
     bindings = <&mo>, <&kp>;
 };
