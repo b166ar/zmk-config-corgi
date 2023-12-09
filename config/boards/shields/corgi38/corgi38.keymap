@@ -31,7 +31,7 @@
 
     //Tab Behavior, tap SW36 and SW37 at the same time
     combo_tab {
-    timeout-ms = <150>;
+    timeout-ms = <200>;
     key-positions = <34 35>;
     bindings = <&kp TAB>;
         };
@@ -157,7 +157,7 @@
                             &kp F17         &none          BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT         &kp F18 
                                   >;
 
-                      };
+                 };
 
         //Nav layer
         // | SW1  | SW2  | SW3  | SW4  | SW5  |         | SW6  | SW7  | SW8  | SW9  | SW10 |
