@@ -24,7 +24,7 @@
 
     //Caps Word Behavior, tap SW11 and SW20 at the same time
     combo_space {
-    timeout-ms = <150>;
+    timeout-ms = <200>;
     key-positions = <32 33>;
     bindings = <&kp SPACE>;
         };
@@ -99,12 +99,12 @@
     bindings = <&mo>, <&kp>;
 };
 
-  //Hold-taps config for thumb claster (layer switching)
+  //Hold-taps config for thumb space
   sp: hold_tap_sp {
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_SP";
     #binding-cells = <2>;
-    tapping_term_ms = <100>;
+    tapping_term_ms = <130>;
     flavor = "tap-preferred";
     require-prior-idle-ms = <125>;
     bindings = <&mo>, <&kp>;
