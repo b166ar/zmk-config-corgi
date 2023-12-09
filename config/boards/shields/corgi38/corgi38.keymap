@@ -73,7 +73,7 @@
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_MODS";
     #binding-cells = <2>;
-    tapping_term_ms = <180>;
+    tapping_term_ms = <160>;
     require-prior-idle-ms = <125>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
@@ -157,7 +157,7 @@
                             &kp F17         &none          BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT         &kp F18 
                                   >;
 
-                 };
+                 };            
 
         //Nav layer
         // | SW1  | SW2  | SW3  | SW4  | SW5  |         | SW6  | SW7  | SW8  | SW9  | SW10 |
