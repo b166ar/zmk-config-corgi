@@ -104,7 +104,7 @@
     compatible = "zmk,behavior-hold-tap";
     label = "HOLD_TAP_SP";
     #binding-cells = <2>;
-    tapping_term_ms = <200>;
+    tapping_term_ms = <100>;
     flavor = "tap-preferred";
     require-prior-idle-ms = <125>;
     bindings = <&mo>, <&kp>;
