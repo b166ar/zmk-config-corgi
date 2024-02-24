@@ -222,7 +222,7 @@
               bindings = <
                 &none          &none           &none          &none           DRSS_E                   ZOOM_OUT      ZOOM_IN         ARROW_UP        &none            CYR_X      
                 &kp LSHFT      &kp LCTRL       &kp LALT       &kp LGUI        &kp F16                  &kp TAB       ARROW_LEFT      ARROW_DOWN      ARROW_RIGHT      CYR_E
-                &none          &none           &none          &none           &none                    &none         CYR_HS          &none           &none            &none
+                &none          &none           &none          &none           &none                      &none         CYR_HS          &none           &none            &none
                                &trans          &trans         &trans          &trans                   &none         &none           &none           &none
                                   >; 
 
