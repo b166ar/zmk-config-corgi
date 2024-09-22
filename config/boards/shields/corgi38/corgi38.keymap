@@ -154,7 +154,7 @@
                 &kp Q       &kp W           &kp E          &kp R           &kp T                     &kp Y         &kp U         &kp I          &kp O         &kp P      
                 HM_A        HM_S            HM_D           HM_F            &kp G                     &kp H         HM_J          HM_K           HM_L          HM_SEMI  
                 &kp Z       &kp X           &kp C          &kp V           &kp B                     &kp N         &kp M         &kp COMMA      &kp DOT       &kp SLASH
-                            &kp F17         &none          BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT         &kp F18 
+                            &kp F17         &kp LSHFT      BSPC_CMD        NUM_ENTER                 NAV_COMMA     SYMB_SPACE    MY_DOT         &kp F18 
                                   >;
 
                  };   
@@ -364,7 +364,7 @@
                 &kp ESC          &kp LS(LG(M))   S_3             S_4             S_5                              &kp N1        &kp N2      &kp N3           S_MINUS         S_PLUS      
                 LSHIFT_BRI_DN    LCTRL_BRI_UP    HM_LALT_VLD     HM_LCMD_VLU     &kp K_MUTE                       &kp N4        &kp N5      &kp N6           S_SLASH         S_STAR  
                 &kp F16          &none           &kp C_PREV      &kp C_NEXT      &kp C_PP                         &kp N7        &kp N8      &kp N9           APOSTR_QUOTE    S_EQUAL
-                                 &trans          &none           &mo CONF        &none                            &kp LA(N5)    &kp N0      &kp LA(N6)       &none
+                                 &trans          &trans           &mo CONF        &none                           &kp LA(N5)    &kp N0      &kp LA(N6)       &none
                       >;
 
                       };                 
