@@ -214,8 +214,9 @@
         //Right Thumbs
                                                          //SW35: &none
                                                          //SW36: &none
-                                                         //SW37: &none
-                                                         //SW38: &none
+        #define S_QMARK         &mt LA(F) LA(N9)         //SW27: ? on tap, ¿ on hold 
+        #define S_EXCLAM        &mt LA(D) LS(N1)         //SW28: ! on tap, ¡ on hold
+        
 
         navigation_layer {
             label = "NAV";
@@ -270,8 +271,6 @@
                                                          //SW25: &none
 
         #define SMCOL_COL       &mt LA(Y) LA(S)          //SW26: : on tap, ; on hold
-        #define S_QMARK         &mt LA(F) LA(N9)         //SW27: ? on tap, ¿ on hold 
-        #define S_EXCLAM        &mt LA(D) LS(N1)         //SW28: ! on tap, ¡ on hold
         #define APOSTR_QUOTE    &mt LA(N1) LA(R)         //SW29: ' on tap, " on hold
         #define S_EQUAL         &mt LA(EQUAL) EQUAL      //SW30: = on tap, ≠ on hold
 
