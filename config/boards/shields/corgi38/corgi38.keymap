@@ -137,13 +137,13 @@
 
 
         //Left Thumbs
-        #define DOT_SHIFT     &sh RSHFT  SPACE      //SW31: ESC on Tap
+        #define SPECE_SHIFT   &sh LEFT_SHIFT  SPACE      //SW31: ESC on Tap
                                                          //SW32: Space on Tap
         #define BSPC_CMD      &mt LCMD BSPC              //SW33: CMD on hold, Backspace on Tap
         #define NUM_ENTER     &hl NUM   ENTER            //SW34: NUMB layer on hold, ENTER on Tap
 
         //Right Thumbs
-        #define NAV_COMMA     &hl NAV   &kp LA(N5)              //SW35: NAV layer onf hold, COMMA on Tap
+        #define NAV_COMMA     &hl NAV   TAB              //SW35: NAV layer onf hold, COMMA on Tap
         #define SYMB_SPACE    &sp SYMB  SPACE            //SW36: Symbol layer on hold, Space on Tap
         #define MY_DOT        &kp LA(N6)                 //SW37: Custom DOT on tap
                                                          //F14 on Tap
