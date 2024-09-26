@@ -145,7 +145,7 @@
         //Right Thumbs
         #define NAV_COMMA     &hl NAV   LA(N5)              //SW35: NAV layer onf hold, COMMA on Tap
         #define SYMB_SPACE    &sp SYMB  SPACE            //SW36: Symbol layer on hold, Space on Tap
-        #define MY_DOT        &kp LA(N6) //SW37: Custom DOT on tap
+        #define MY_DOT        &sh LEFT_SHIFT   LA(N5) //SW37: Custom DOT on tap
                                                          //F14 on Tap
 
         default_layer {
