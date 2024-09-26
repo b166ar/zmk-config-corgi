@@ -204,8 +204,8 @@
                                                           //SW28: &none                                                      
                                                           //SW29: &none
                                                           //SW30: &none
-        #define S_QMARK         &mt LA(F) LA(N9)         //SW27: ? on tap, ¿ on hold 
-        #define S_EXCLAM        &mt LA(D) LS(N1)         //SW28: ! on tap, ¡ on hold
+        #define S_QMARK         &mt LA(N9) LA(N9)         //SW27: ? on tap, ¿ on hold 
+        #define S_EXCLAM        &mt LS(N1)  LS(N1)         //SW28: ! on tap, ¡ on hold
 
         //Left Thumbs
                                                          //SW31: ESC on Tap
